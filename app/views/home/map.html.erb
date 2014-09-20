@@ -13,65 +13,67 @@
     overflow: hidden;
   }
 </style>
-<!--
-<%= form_tag root_path, :method => :get do %>
-  <%= text_field_tag :event_name, params[:event_name] %>
-  <%= text_field_tag :venue_name, params[:venue_name] %>
-  <%= submit_tag "Search", name: nil %>
-<% end %>
--->
-<section class="search">
-<%= form_tag(root_path, :method => "get", id: "search-form") do %>
-  <%= text_field_tag :search, params[:search], placeholder: "Event Type" %>
-  <%= submit_tag "Search", :name => nil, :class => 'button'%>
-  <fieldset>
-    <ul>
-      <li><%= check_box_tag(:search, "art", :name => nil, :class => 'filter') %> <%= label_tag(:art, "Art") %></li>
-      <li><%= check_box_tag(:search, "performance") %> <%= label_tag(:performance, "Performance") %></li>
-      <li><%= check_box_tag(:search, "science") %> <%= label_tag(:science, "Science/Tech") %></li>
-    </ul>
-  </fieldset>
-  <div class="clear-fix"></div>
-<% end %>
-</section><!--.search-->
+<div class="inner-wrapper">
+  <!--
+  <%= form_tag root_path, :method => :get do %>
+    <%= text_field_tag :event_name, params[:event_name] %>
+    <%= text_field_tag :venue_name, params[:venue_name] %>
+    <%= submit_tag "Search", name: nil %>
+  <% end %>
+  -->
+  <section class="search">
+  <%= form_tag(root_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Event Type" %>
+    <%= submit_tag "Search", :name => nil, :class => 'button'%>
+    <fieldset>
+      <ul>
+        <li><%= check_box_tag(:search, "art", :name => nil, :class => 'filter') %> <%= label_tag(:art, "Art") %></li>
+        <li><%= check_box_tag(:search, "performance") %> <%= label_tag(:performance, "Performance") %></li>
+        <li><%= check_box_tag(:search, "science") %> <%= label_tag(:science, "Science/Tech") %></li>
+      </ul>
+    </fieldset>
+    <div class="clear-fix"></div>
+  <% end %>
+  </section><!--.search-->
 
-<section class="map-view">
-  <h2>Map of Events</h2>
-  <script src="http://maps.googleapis.com/maps/api/js?sensor=false">
-  </script>
-  <div id="map" style="width: 300px; height: 300px;"></div>
-</section><!--.map-view-->
+  <section class="map-view">
+    <h2>Map of Events</h2>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+    <div id="map"></div>
+  </section><!--.map-view-->
 
-<section class="listings">
-  <h2>Events</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Event Name</th>
-        <th>Venue Address</th>
-        <th>Event Description</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
-    <!-- venue name is Venue.find_by_id(@events.find_by_id(i).venue_id).name -->
-    <tbody>
-      <% @events.each do |i| %>
+  <section class="listings">
+    <hr>
+    <h2>Events</h2>
+    <table>
+      <thead>
         <tr>
-          <td><%= link_to @events.find_by_id(i).name, i%></td>
-          <td><%= Venue.find_by_id(@events.find_by_id(i).venue_id).street%> <br>
-            <%= Venue.find_by_id(@events.find_by_id(i).venue_id).city%> 
-            <%= Venue.find_by_id(@events.find_by_id(i).venue_id).state%>,<%= Venue.find_by_id(@events.find_by_id(i).venue_id).zip%></td>
-          <td><%= @events.find_by_id(i).description %></td>
+          <th>Event</th>
+          <th>Address</th>
+          <th>Description</th>
+          <th colspan="3"></th>
         </tr>
-      <% end %>
-    </tbody>
-  </table>
-</section><!--.listings-->
+      </thead>
+      <!-- venue name is Venue.find_by_id(@events.find_by_id(i).venue_id).name -->
+      <tbody>
+        <% @events.each do |i| %>
+          <tr>
+            <td class="title"><%= link_to @events.find_by_id(i).name, i%></td>
+            <td><%= Venue.find_by_id(@events.find_by_id(i).venue_id).street%> <br>
+              <%= Venue.find_by_id(@events.find_by_id(i).venue_id).city%> 
+              <%= Venue.find_by_id(@events.find_by_id(i).venue_id).state%>,<%= Venue.find_by_id(@events.find_by_id(i).venue_id).zip%></td>
+            <td><%= @events.find_by_id(i).description %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </section><!--.listings-->
 
 
-<!-- my map -->
+  <!-- my map -->
 
-<%= javascript_tag do %>
+  <%= javascript_tag do %>
  window.venuesURL = "<%=j venues_url %>";
  window.eventsURL = "<%=j events_url %>";
 
@@ -79,10 +81,36 @@
  //@venues.select("name","latitude","longitude").to_json
   window.events = <%=raw @eventVenuesArr.to_json %>;
 
+  var styleArray = [
+  {
+    featureType: "all",
+    stylers: [
+      { saturation: -80 }
+    ]
+  },{
+    featureType: "road.arterial",
+    elementType: "geometry",
+    stylers: [
+      { hue: "#00ffee" },
+      { saturation: 50 }
+    ]
+  },{
+    featureType: "poi.business",
+    elementType: "labels",
+    stylers: [
+      { visibility: "off" }
+    ]
+  }
+];
+
+
   var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 13,
       center: new google.maps.LatLng(37.7745140408613, -122.44537353515625),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: styleArray,
+
+
     });
 
     var infowindow = new google.maps.InfoWindow();
@@ -104,9 +132,10 @@
 
       }
 
+       
+
+     
      
 
-   
-   
-
-<% end %>
+  <% end %>
+</div><!--.inner-wrapper-->

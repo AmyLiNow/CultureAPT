@@ -92,14 +92,14 @@ body {
 
 a {
   text-decoration: none;
-  color: $red-color;
+  color: $dark-teal-color;
 
   &:hover {
     text-decoration: none;
   }
 }
 h1,h2,h4 {
-  font-family: $condensed-font;
+  font-family: $default-font;
 }
 p {
   margin: 0px 0px 12px 0px;
@@ -118,14 +118,15 @@ h1 {
 
 }
 h2, h2 a {
-  font-size: 23px;
+  font-size: 26px;
+  font-weight: 800;
   line-height: 1.2;
-  font-weight: normal;  
 }
 h3 {
   font-size: 18px;
   margin: 0 0 10px;
   font-weight: 800;
+  font-family: $condensed-font;
 }
 
 h4 {
@@ -161,14 +162,15 @@ input.button {
   display: none;
 }
 
+
 /*************************
 MOBILE
 **************************/
 
 nav.top-nav {
   width: 100%;
-  background: $light-teal-color;
-  border-bottom: 2px $red-color solid;
+  background: #fff;
+  border-bottom: 2px #ccc solid;
   display: block;
   min-height: 71px;
   color: #fff;
@@ -217,26 +219,29 @@ nav.top-nav {
 }
 .menu-toggle {
   position: absolute;
-  background: image-url('menu-btn.png') no-repeat;
+  background: image-url('menu-btn-teal.png') no-repeat;
   width: 32px;
   height: 32px;
   text-indent: -999px;
   top: 19px;
-  right: 27px;
+  right: 11px;
   display: block;
   
 }
-.menu-toggle.collapsed {
+.menu-toggle.x-icon {
   background-position: left bottom;
 }
-section {
+
+.inner-wrapper {
   width: 300px;
-  margin: 0 auto 20px;
+  margin: 0 auto;
 }
 .search {
   input[type="text"] {
     width: 60%;
     margin-right: 2%;
+    border: 1px #999 solid;
+    padding-top: 2px;
   }
   fieldset {
     margin: 20px auto 20px;
@@ -248,7 +253,7 @@ section {
     }
   }
   input.button {
-    width: 37%;
+    width: 36%;
   }
   input[type="checkbox"] {
     float: left;
@@ -257,7 +262,7 @@ section {
     height: 20px;
     color: $dark-teal-color;
     background: #fff;
-    border: 1px $red-color solid;
+    border: 1px #999 solid;
     cursor: pointer;
     &:checked {
       background: $light-teal-color;
@@ -272,5 +277,66 @@ section {
     padding: 0 10px;
   }
 }
+#map {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
 
+.listings {
+  margin-bottom: 20px;
+  table {
+    width: 100%;
+  }
+  h2 {
+    text-align: center;
+  }
+  thead {
+    font-weight: 800;
+    font-size: 16px;
+    th {
+      padding: 0 5px;
+      color: #555;
+    }
+  }
+  tr {
+    border-bottom: 1px #ccc solid;
+    td {
+      padding: 10px 5px;
+      line-height: 1.2;
+      &.title {
+        font-weight: bold;
+      }
+    }
+  }
+
+}
+footer {
+  background: #aaa;
+  color: #fff;
+  padding: 10px 0;
+  .left, .right {
+    ul {
+      list-style: none;
+    }
+  }
+  .left {
+    .brand, .blurb {
+      text-align: center;
+      margin-bottom: 10px;
+      font-style: italic;
+    }
+  }
+  .right {
+    
+    .company {
+      h3, li, li a {
+        text-align: center;
+        color: $light-teal-color;
+
+      }
+      
+    }
+  }
+}
 

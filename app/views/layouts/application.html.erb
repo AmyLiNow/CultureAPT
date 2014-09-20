@@ -9,7 +9,6 @@
 <html class='no-js' lang='en'>
   <!--<![endif]-->
 
-
 <html>
 <head>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans' rel='stylesheet' type='text/css'>
@@ -45,9 +44,8 @@ Featuring nonprofit art, performing arts and science and technology events."/>
   <meta name="twitter:creator" conten
   <meta name="twitter:description" content="A select listing of cultural events in San Francisco.
 Featuring nonprofit art, performing arts and science and technology events."/>
-  <link rel="image_src" href="/img/peers_logo_top_nav.png">
+  <link rel="image_src" href="/images/text_title.png">
   <!-- ShareProgress meta tags -->
-  <meta name="sp:twitter" content="@CultureAPT" />
   <meta name="twitter:image:src" content="/img/logo.png"/>
  
 </head>
@@ -56,7 +54,7 @@ Featuring nonprofit art, performing arts and science and technology events."/>
   <nav class="top-nav">
     <div class="inner-nav">
       <a class="brand" href="#">CultureAPT</a>
-      <a class="menu-toggle" href="/"></a>
+      <a class="menu-toggle" href="#"></a>
       <ul class="menu collapsed">
         <li><a href="/events">List of Events</a></li>
         <li><a href="/map">Map of Events</a></li>
@@ -69,5 +67,43 @@ Featuring nonprofit art, performing arts and science and technology events."/>
 
 <%= yield %>
 
+<footer class="content-info" role="contentinfo">
+    <div class="inner-wrapper">
+
+    <section class="left">
+      <ul>
+        <li class="brand"><%=image_tag("logo-mobile-white-centered.png") %></li>
+        <li class="blurb">A select listing of cultural events in San Francisco.
+Featuring nonprofit art, performing arts and science and technology events.</li>
+      </ul>
+      <div class="clear-fix"></div>
+    </section><!--.left-->
+
+    <nav class="right">
+      
+      <section class="company">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/team">Team</a></li>
+          </li>
+        </ul>
+        <div class="clear-fix"></div>
+
+      </section><!--.company-->
+    </nav><!--.middle-->
+
+    
+    <div class="clear-fix"></div>
+  </div><!--.inner-wrapper-->
+</footer>
+
+<%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" %>
+
+<%= javascript_include_tag "application" %>
+
+
+
 </body>
+
 </html>
