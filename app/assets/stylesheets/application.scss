@@ -82,7 +82,7 @@ $black-color: #373F42;
 BASIC STYLES
 **************************/
 body {
-  background: $white-background;
+  background: #aaa;
   width: 100%;
   margin: 0 auto;
   font: normal 11px $default-font;
@@ -166,8 +166,10 @@ input.button {
 /*************************
 MOBILE
 **************************/
-
-nav.top-nav {
+.wrapper {
+  background: $white-background;
+}
+.top-nav {
   width: 100%;
   background: #fff;
   border-bottom: 2px #ccc solid;
@@ -187,32 +189,19 @@ nav.top-nav {
     z-index: 200;
     margin:0 auto;
   }
-  ul.menu {
+  .menu {
     width: 100%;
-    
+    background: #35A19C;
+    border-bottom: 1px solid #797979;
+    list-style: none;
     li {
       text-align: center;
       padding: 10px 0;
-      border-bottom: 1px solid #797979;
-      background: #35A19C;
       a {
         font-size: 30px;
         color: #fff;
         text-transform: uppercase;
         font-weight: 800;
-      }
-      &.login {
-        background: $red-color;
-        border-bottom: none;
-        img {
-          width: 32px;
-          height: 32px;
-          margin-right: 10px;
-          margin-bottom: -4px;
-        }
-      }
-      &.login a {
-        font-weight: normal;
       }
     }
   }
@@ -282,7 +271,6 @@ nav.top-nav {
   height: 300px;
   margin-bottom: 20px;
 }
-
 .listings {
   margin-bottom: 20px;
   table {
@@ -295,7 +283,7 @@ nav.top-nav {
     font-weight: 800;
     font-size: 16px;
     th {
-      padding: 0 5px;
+      padding: 0 5px 10px;
       color: #555;
     }
   }
@@ -309,7 +297,6 @@ nav.top-nav {
       }
     }
   }
-
 }
 footer {
   background: #aaa;
@@ -328,15 +315,122 @@ footer {
     }
   }
   .right {
-    
     .company {
       h3, li, li a {
         text-align: center;
         color: $light-teal-color;
 
       }
-      
     }
   }
 }
 
+/*************************
+TABLET
+**************************/
+@media only screen and (min-width:640px) {
+  .top-nav {
+    position: fixed;
+    z-index: 600;
+    height: 60px;
+    min-height: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+    .inner-nav {
+      width: 640px;
+      display: block;
+      margin: 0 auto;
+    }
+    .brand {
+      margin: 10px 0 0 10px;
+      float: left;
+      height: 34px;
+      width: 33%;
+      background: image-url('logo_desktop.png') no-repeat center center;
+      background-size: contain;
+    }
+    .menu-toggle {
+      display: none;
+    }
+    .menu {
+      background: none;
+      display: block;
+      float: right;
+      width: 33%;
+      border: none;
+      li {
+        float: left;
+        border-bottom: none;
+        height: 60px;
+        padding: 0;
+        a {
+          font-size: 12px;
+          line-height: 60px;
+          padding: 0 10px;
+          text-align: center;
+          color: #aaa;
+        }
+        &:after {
+          content: "|";
+          color: #aaa;
+          margin-left: 2px;
+        }
+        &.last {
+          &:after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+  .inner-wrapper {
+    width: 640px;
+    .search {
+      width: 100%;
+      padding-top: 70px;
+      fieldset.search-field {
+        float: left;
+        width: 43%;
+      }
+      fieldset.filters {
+        float: left;
+        width: 57%;
+        margin-top: 31px;
+        li {
+          float: left;
+          label {
+            width: auto;
+          }
+          
+        }
+      }
+    }
+  }
+  footer {
+
+    .left, .right {
+      width: 50%;
+      float: left;
+    }
+  }
+}
+/*************************
+DESKTOP
+**************************/
+@media only screen and (min-width:960px) {
+  .top-nav {
+    .inner-nav {
+      width: 960px;
+    }
+    .brand {
+      height: 40px;
+      width: 22%;
+    }
+  }
+  .inner-wrapper {
+    width: 960px;
+    .listings {
+
+    }
+  }
+}

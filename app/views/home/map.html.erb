@@ -21,11 +21,15 @@
     <%= submit_tag "Search", name: nil %>
   <% end %>
   -->
+  <a id="search"></a> 
   <section class="search">
+
   <%= form_tag(root_path, :method => "get", id: "search-form") do %>
-    <%= text_field_tag :search, params[:search], placeholder: "Event Type" %>
+    <fieldset class="search-field">
+    <%= text_field_tag :search, params[:search], placeholder: "Search" %>
     <%= submit_tag "Search", :name => nil, :class => 'button'%>
-    <fieldset>
+    </fieldset>
+    <fieldset class="filters">
       <ul>
         <li><%= check_box_tag(:search, "art", :name => nil, :class => 'filter') %> <%= label_tag(:art, "Art") %></li>
         <li><%= check_box_tag(:search, "performance") %> <%= label_tag(:performance, "Performance") %></li>
@@ -36,15 +40,17 @@
   <% end %>
   </section><!--.search-->
 
+  <a id="map"></a> 
+
   <section class="map-view">
     <h2>Map of Events</h2>
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false">
     </script>
     <div id="map"></div>
   </section><!--.map-view-->
-
+  <a id="listings"></a> 
   <section class="listings">
-    <hr>
+    
     <h2>Events</h2>
     <table>
       <thead>
@@ -132,10 +138,6 @@
 
       }
 
-       
-
-     
-     
-
   <% end %>
+
 </div><!--.inner-wrapper-->
