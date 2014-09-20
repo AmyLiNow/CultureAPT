@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :suggestions
+
    resources :venues
 
   root 'home#map'

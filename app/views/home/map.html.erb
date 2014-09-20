@@ -1,18 +1,8 @@
-<!--create search box in index template-->
-<style type="text/css">
-  #content {
-    /*min-height: 70px;
-    max-height: 100px;
-    height: auto;
-    width: auto;
-    max-width: 300px;
-    padding: 2px;*/
-    overflow: hidden;
-  }
-  .gm-style .gm-style-iw{
-    overflow: hidden;
-  }
-</style>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  
 <div class="inner-wrapper">
   <!--
   <%= form_tag root_path, :method => :get do %>
@@ -36,6 +26,37 @@
         <li><%= check_box_tag(:search, "science") %> <%= label_tag(:science, "Science/Tech") %></li>
       </ul>
     </fieldset>
+    <fieldset class="date-search">
+      <%= form_tag(root_path, :method => "get") do %>
+
+        <%= text_field_tag :startDateSearch, params[:startDateSearch], placeholder: "Start Date", id: "from" %>
+        <%= text_field_tag :endDateSearch, params[:endDateSearch], placeholder: "End Date", id: "to" %>
+        <%= submit_tag "search date", :name => nil, :class => 'button' %> 
+
+        <%= @startDateSearch %><%= @endDateSearch %> 
+      <% end %>
+      <script>
+        $(function() {
+          $( "#from" ).datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 2,
+            onClose: function( selectedDate ) {
+              $( "#to" ).datepicker( "option", "minDate", selectedDate );
+            }
+          });
+          $( "#to" ).datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 2,
+            onClose: function( selectedDate ) {
+              $( "#from" ).datepicker( "option", "maxDate", selectedDate );
+            }
+          });
+        });
+        </script>
+    </fieldset><!--.date-search-->
+
     <div class="clear-fix"></div>
   <% end %>
   </section><!--.search-->

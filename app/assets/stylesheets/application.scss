@@ -233,6 +233,7 @@ MOBILE
     padding-top: 2px;
   }
   fieldset {
+    width: 100%;
     margin: 20px auto 20px;
     ul {
       list-style: none;
@@ -264,6 +265,24 @@ MOBILE
     display: block;
     font-size: 18px;
     padding: 0 10px;
+  }
+}
+.date-search {
+  input[type="text"] {
+    float: left;
+    width: 49%;
+    border: 1px #999 solid;
+    padding-top: 2px;
+    margin-bottom: 10px;
+    &#to {
+      margin-right: 0;
+    }
+  }
+  input[type=submit] {
+    width: 100%;
+  }
+  fieldset {
+    margin: 20px auto 20px;
   }
 }
 #map {
@@ -401,7 +420,14 @@ TABLET
           label {
             width: auto;
           }
-          
+        }
+      }
+      fieldset.date-search {
+        input#to,input#from, input[type=submit] {
+          width: 25%;
+        }
+        input#to {
+          margin-right: 2%;
         }
       }
     }
