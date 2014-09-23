@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'jquery-datetimepicker-rails'
 gem 'geocoder'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

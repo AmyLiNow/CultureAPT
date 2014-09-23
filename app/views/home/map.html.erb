@@ -27,7 +27,7 @@
   <section class="search">
     <%= form_tag(root_path, :method => "get") do %>
       <fieldset class="search-field">
-        <%= text_field_tag :search, params[:search], placeholder: "search by event" %>
+        <%= text_field_tag :search, params[:search], placeholder: "search" %>
         <%= submit_tag "search events", :name => nil, :class => 'button' %>
       </fieldset>
     <% end %>
@@ -60,9 +60,23 @@
       </fieldset>           
     <% end %>
   
+   <!--  <%= form_tag(root_path, :method => "get") do %>
+    <fieldset class="date-search">
+      <%= text_field_tag :startTimeSearch, params[:startTimeSearch], placeholder: "start time", id: "datetimepicker" %>
+      <%= text_field_tag :endTimeSearch, params[:endTimeSearch], placeholder: "end time", id: "to" %>
+      <%= submit_tag "search by time", :name => nil, :class => 'button' %> 
+      </fieldset>           
+    <% end %>
+   -->
   <div class="clear-fix"></div>
 </section><!--.search-->
 
+<script type="text/javascript">
+  // jQuery('#datetimepicker2').datetimepicker({
+  // datepicker:false,
+  // format:'H:i'
+});
+</script>
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false">
 </script>
   
@@ -164,3 +178,6 @@
     }
   <% end %>
 </div>
+<link rel="stylesheet" type="text/css" href="/jquery.datetimepicker.css"/ >
+<script src="/jquery.js"></script>
+<script src="/jquery.datetimepicker.js"></script>

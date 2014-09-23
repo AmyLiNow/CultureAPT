@@ -1,6 +1,9 @@
 class SuggestionsController < ApplicationController
   before_action :set_suggestion, only: [:show, :edit, :update, :destroy]
 
+  def thank_you
+    
+  end
   # GET /suggestions
   # GET /suggestions.json
   def index

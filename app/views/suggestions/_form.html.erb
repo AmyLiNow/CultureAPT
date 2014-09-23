@@ -2,24 +2,29 @@
   <% if @suggestion.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@suggestion.errors.count, "error") %> prohibited this suggestion from being saved:</h2>
-
-      <ul>
       <% @suggestion.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+        <ul>
+          <li><%= message %></li>
+        </ul>
       <% end %>
-      </ul>
     </div>
   <% end %>
-  <div class="field"><%= f.label :event_name %><br> <%= f.text_field :event_name %></div>
-  <div class="field"><%= f.label "event website" %><br><%= f.text_field :event_url %>
+  <div class="field">
+    <%= f.label :event_name %><br> <%= f.text_field :event_name %>
   </div>
-  <div class="field"><%= f.label :start_date %><br>
+  <div class="field">
+    <%= f.label "event website" %><br><%= f.text_field :event_url %>
+  </div>
+  <div class="clear-fix"></div>
+  <div class="field">
+    <%= f.label :start_date %><br>
     <%= f.date_select :start_date %>
   </div>
   <div class="field">
     <%= f.label :end_date %><br>
     <%= f.date_select :end_date %>
   </div>
+  <div class="clear-fix"></div>
   <div class="field">
     <%= f.label :start_time %><br>
     <%= f.text_field :start_time %>
@@ -28,124 +33,82 @@
     <%= f.label :end_time %><br>
     <%= f.text_field :end_time %>
   </div>
+  <div class="clear-fix"></div>
   <div class="field">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
 
-   <div class="field">
-    <%= f.label "RSVP required" %><br>
-     <%= f.check_box :ticket_rsvp_instruction %>
-  </div>
-  
-   <div class="field">
-    <%= f.label "Special instructions" %><br>
-    <%= f.text_area :spec_instruction %>
+  <div class="field">
+    <%= f.check_box :ticket_rsvp_instruction %>
+    <%= f.label "RSVP required" %>
   </div>
 
+  <div class="field">
+    <%= f.label "Special instructions" %> <br>
+    <%= f.text_area :spec_instruction %>
+  </div>
+  <div class="clear-fix"></div>
   <div class="field">
     <%= f.label "Price low $" %><br>
     <%= f.text_field :price_low %>
   </div>
   <div class="field">
-    <%= f.label "Price high $" %><br>
+    <%= f.label "Price high $" %> <br>
     <%= f.text_field :price_high %>
   </div>
+  <div class="clear-fix"></div>
   <div class="field">
     <p> "Restrictions" </p>
-   <ul>
-    <li>
-    <%= f.label "18+" %><br>
-    <%= f.check_box :restriction %>
-  </li>
-   <li>
-    <%= f.label "21+" %><br>
-    <%= f.check_box :restriction %>
-  </li>
-  </ul>
+    <%= f.check_box :restriction %><%= f.label "18+" %>
+    <%= f.check_box :restriction %><%= f.label "21+" %>
   </div>
-  
-  <p>Category</p>
-    <div class="field">
-    <ul>
-    <li>
-    <%= f.label "art" %><br>
-    <%= f.check_box :category %>
-  </li>
-     <li>
-    <%= f.label "performance" %><br>
-    <%= f.check_box :category %>
-  </li>
-     <li>
-    <%= f.label "science\/tech" %><br>
-    <%= f.check_box :category %>
-  </li></ul>
+  <div class="clear-fix"></div>
+  <div class="field">
+    <p>Category</p>
+    <%= f.check_box :category %><%= f.label "art" %>
+    <%= f.check_box :category %><%= f.label "performance" %>
+    <%= f.check_box :category %><%= f.label "science\/tech" %> 
   </div>
-    
-   <p>Subcategory</p>
-    <div class="field">
-    <ul>
-    <li>
-    <%= f.label "jazz" %><br>
+  <div class="clear-fix"></div>
+  <div class="field ">
+    <p>Subcategory</p>
     <%= f.check_box :subcategory %>
-  </li>
-  <li>
-    <%= f.label "classical music" %><br>
+    <%= f.label "jazz" %>      
     <%= f.check_box :subcategory %>
-  </li>
-     <li>
-    <%= f.label "dance" %><br>
+    <%= f.label "classical music" %>      
     <%= f.check_box :subcategory %>
-  </li>
-   <li>
-    <%= f.label "ballet\/opera" %><br>
+    <%= f.label "dance" %>      
     <%= f.check_box :subcategory %>
-  </li>
-     <li>
-    <%= f.label "theater\/plays" %><br>
+    <%= f.label "ballet\/opera" %>      
     <%= f.check_box :subcategory %>
-  </li>
-  <li>
-    <%= f.label "comedy" %><br>
+    <%= f.label "theater\/plays" %>      
     <%= f.check_box :subcategory %>
-  </li>
-   <li>
-    <%= f.label "lecture\/talk" %><br>
+    <%= f.label "comedy" %>      
     <%= f.check_box :subcategory %>
-  </li></ul>
+    <%= f.label "lecture\/talk" %>      
   </div>
-  
-   <div class="field">
-    <%= f.label "Location name" %><br>
+  <div class="clear-fix"></div>
+  <!--  <div class="field">
+    <%= f.label "Location name" %>
     <%= f.text_field :venue_name %>
-  </div>
-    <div class="field">
-    <%= f.label "Organization name (optional)" %><br>
+    <%= f.label "Organization name (optional)" %>
     <%= f.text_field :org_name %>
-  </div>
+  </div> -->
+  <div class="clear-fix"></div>
   <div class="field">
-    <%= f.label :street %><br>
-    <%= f.text_field :street %>
+    <ul>
+      <li><%= f.label "Location name" %><%= f.text_field :venue_name %></li>
+      <li><%= f.label :street %><%= f.text_field :street %></li>
+      <li><%= f.label :city %><%= f.text_field :city %></li>
+      <li><%= f.label :state %><%= f.text_field :state %></li>
+      <li><%= f.label :zip %><%= f.text_field :zip %></li>
+      <li> <%= f.label :phone %><%= f.text_field :phone %></li>
+    </ul>
   </div>
-  <div class="field">
-    <%= f.label :city %><br>
-    <%= f.text_field :city %>
-  </div>
-  <div class="field">
-    <%= f.label :state %><br>
-    <%= f.text_field :state %>
-  </div>
-  <div class="field">
-    <%= f.label :zip %><br>
-    <%= f.text_field :zip %>
-  </div>
-
-  <div class="field">
-    <%= f.label :phone %><br>
-    <%= f.text_field :phone %>
-  </div>
-
-  <div class="actions">
+  <!--     </div> -->
+  <div class="clear-fix"></div>
+  <!-- <div class="actions"> -->
     <%= f.submit %>
-  </div>
-<% end %>
+  <!-- </div> -->
+<% end %> 

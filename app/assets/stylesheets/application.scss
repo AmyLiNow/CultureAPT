@@ -13,6 +13,8 @@
  *= require_self
  */
 
+
+
 html, body, div, span,
 applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -106,7 +108,7 @@ h1,h2,h4 {
 p {
   margin: 0px 0px 12px 0px;
   font-family: $default-font;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.47058823529412;
 }
 h1, h2, h3, h4 {
@@ -114,7 +116,7 @@ h1, h2, h3, h4 {
   
 }
 h1 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 800;
   line-height: 1.2em;
 
@@ -126,7 +128,7 @@ h2, h2 a {
   text-transform: uppercase;
 }
 h3 {
-  font-size: 18px;
+  font-size: 15px;
   margin: 0 0 10px;
   font-weight: 800;
   font-family: $condensed-font;
@@ -134,11 +136,11 @@ h3 {
 }
 
 h4 {
-  font-size: 14px;
+  font-size: 12px;
   margin: 0 0 5px;
 }
 input, select {
-  font-size: 14px;
+  font-size: 12px;
   height: 35px;
   padding-left: 5px;
   padding-right: 5px;
@@ -148,14 +150,14 @@ input.button, a.button {
   height: 35px;
   background: $dark-teal-color;
   color: #fff;
-  font-weight: 800;
-  min-width: 100px;
+  /*font-weight: 800;*/
+  min-width: 164px;
   text-align: center;
   text-transform: uppercase;
 }
 a.button {
   padding: 10px 38px;
-  font-size: 14px;
+  font-size: 12px;
 }
 .clear-fix {
   clear: both; 
@@ -206,7 +208,7 @@ MOBILE
       text-align: center;
       padding: 10px 0;
       a {
-        font-size: 30px;
+        font-size: 25px;
         color: #fff;
         text-transform: uppercase;
         font-weight: 800;
@@ -232,8 +234,9 @@ MOBILE
 .inner-wrapper {
   width: 300px;
   margin: 0 auto;
+  padding-bottom: 15px;
 }
-.search {
+.search, .field input#suggestion_restriction{
   input[type="text"] {
     //width: 60%;
     margin-right: 2%;
@@ -255,8 +258,8 @@ MOBILE
   input[type="checkbox"] {
     float: left;
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     color: $dark-teal-color;
     background: #fff;
     border: 1px #999 solid;
@@ -270,7 +273,7 @@ MOBILE
     float: left;
     width: 90%;
     display: block;
-    font-size: 18px;
+    font-size: 15px;
     padding: 0 10px;
   }
 }
@@ -289,7 +292,7 @@ MOBILE
   }
   thead {
     font-weight: 800;
-    font-size: 16px;
+    font-size: 14px;
     th {
       padding: 0 5px 10px;
       color: #555;
@@ -461,21 +464,21 @@ DESKTOP
     width: 960px;
     .search {
       fieldset.search-field {
-        width: 42%;
+        width: 50%;
         input[type=text] {
-          width: 65%;
+          width: 54.5%;
         }
       }
       fieldset.filters {
-          width: 56%;
-          margin-left: 2%;
-        li {padding: 6px 0;}
+          width: 50%;
+          /*margin-left: 2%;*/
+        li {padding: 10px 0;}
       }
       fieldset.date-search {
-        margin: 0 auto 10px;
-        width: 55%; 
+        margin: 20px auto 10px;
+        width: 50%; 
         input[type=text] {
-          width: 24%;
+          width: 26%;
         }
       }
     }
@@ -494,9 +497,52 @@ Scaffold pages
 **************************/
 .field {
   margin-top: 20px;
+  float: left;
+  margin-right: 10px;
 }
 
 .topSpace {
   margin-top: 60px;
   padding-top: 10px;
+}
+
+
+/* suggestion form*/
+input#suggestion_restriction, input#suggestion_ticket_rsvp_instruction, input#suggestion_category, input#suggestion_subcategory {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  margin-right: 10px;
+}
+
+.field ul {
+  width: 50%;
+}
+.field li {
+margin-top: 10px;
+margin-bottom:  10px;
+list-style: none;
+}
+
+.field label {
+  width: 50%;
+}
+
+input#suggestion_subcategory[type="checkbox"], input#suggestion_category[type="checkbox"], input#suggestion_restriction[type="checkbox"]{
+    background: #fff;
+    border: 1px #999 solid;
+    margin-right: 5px;
+    margin-left: 15px;
+    padding-right: 0px;
+    padding-top: 5px;
+}
+
+
+input#suggestion_ticket_rsvp_instruction[type="checkbox"]:checked, input#suggestion_subcategory[type="checkbox"]:checked, input#suggestion_category[type="checkbox"]:checked, input#suggestion_restriction[type="checkbox"]:checked {
+  background: #4ad9d9;
+box-shadow: 0 0 0 2px #fff inset;
+}
+
+div#root {
+margin-top: 10px;
 }
