@@ -1,14 +1,8 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-
-</p>
-
-<p>
-  <strong>Event:</strong>
- <!--  <%= @event.name %> -->
-  <%= link_to @event.name, @event.url  %>
-</p>
+<div class="inner-wrapper">
+<section class="event">
+<div class="event-listing">
+<h1><strong>Event:</strong><%= link_to @event.name, @event.url  %></h1>
 
 <p>
   <strong>Time:</strong>
@@ -44,11 +38,15 @@
   <%= @event.price_high %>
 </p>
 
-<p>
+<p class="category">
   <strong>Event Category:</strong>
   <%= @event.category %>
   <%= @event.subcategory %>
-</p>
+</p> <!--.category-->
+</div>
+<div class="clear-fix"></div>
+<%= link_to 'Back', events_path, :class => 'button' %>
+<div class="clear-fix"></div>
+</section>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+</div>

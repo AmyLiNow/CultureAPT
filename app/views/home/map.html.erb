@@ -31,34 +31,37 @@
         <%= submit_tag "search events", :name => nil, :class => 'button' %>
       </fieldset>
     <% end %>
-    <div class="clear-fix"></div>
+    
     <%= form_tag(root_path, :method => "get") do %>
       <fieldset class="filters">
        <ul>
         <li>
-          <%= check_box_tag(:categorySearch1, "art", :name => nil) %> <%= label_tag(:category, "Art") %>
+          <%= check_box(:categorySearch1, "art", :name => nil) %> <%= label_tag(:category, "Art") %>
         </li>
         <li>
-          <%= check_box_tag(:categorySearch2, "performance") %> <%= label_tag(:category, "Performance") %>
+          <%= check_box(:categorySearch2, "performance") %> <%= label_tag(:category, "Performance") %>
         </li>
         <li>
-          <%= check_box_tag(:categorySearch3, "science") %> <%= label_tag(:category, "Science/Tech") %>
+          <%= check_box(:categorySearch3, "science") %> <%= label_tag(:category, "Science/Tech") %>
         </li>
         <li> <%= submit_tag "search by category", :name => nil, :class => 'button' %></li>
       </ul>
+      <div class="clear-fix"></div>
 
     </fieldset>
-  <% end %>
-  <div class="clear-fix"></div>
-  <fieldset>
+    <% end %>
+    <div class="clear-fix"></div>
+  
     <%= form_tag(root_path, :method => "get") do %>
+    <fieldset class="date-search">
       <%= text_field_tag :startDateSearch, params[:startDateSearch], placeholder: "start date", id: "from" %>
       <%= text_field_tag :endDateSearch, params[:endDateSearch], placeholder: "end date", id: "to" %>
-      <%= submit_tag "search by date", :name => nil, :class => 'button' %>            
+      <%= submit_tag "search by date", :name => nil, :class => 'button' %> 
+      </fieldset>           
     <% end %>
-  </fieldset>
+  
   <div class="clear-fix"></div>
-</section>
+</section><!--.search-->
 
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false">
 </script>
@@ -70,7 +73,7 @@
 </section>
 <a id="listings"></a> 
 <section class="listings">
-  <h1>Events</h1>
+  <h2>Events</h2>
   <table>
     <thead>
       <tr>
