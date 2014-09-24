@@ -13,6 +13,7 @@ class SuggestionsController < ApplicationController
   # GET /suggestions/1
   # GET /suggestions/1.json
   def show
+
   end
 
   # GET /suggestions/new
@@ -31,13 +32,16 @@ class SuggestionsController < ApplicationController
 
     respond_to do |format|
       if @suggestion.save
-        format.html { redirect_to @suggestion, notice: 'Suggestion was successfully created.' }
+        # format.html { redirect_to @suggestion, notice: 'Suggestion was successfully created.' }
+        format.html { redirect_to "/suggestions/thank_you"}
+        
         format.json { render :show, status: :created, location: @suggestion }
       else
         format.html { render :new }
         format.json { render json: @suggestion.errors, status: :unprocessable_entity }
       end
     end
+
   end
 
   # PATCH/PUT /suggestions/1

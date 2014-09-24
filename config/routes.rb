@@ -1,13 +1,14 @@
 Rails.application.routes.draw do
   
-  resources :suggestions
+  get '/suggestions/thank_you' 
+  
 
   root 'home#map'
   get 'home/map'
   get 'home/list'
 
-  get 'suggestions/thank_you'
-
+  
+  resources :suggestions
   resources :venues
   resources :orgs
   resources :events
