@@ -36,13 +36,13 @@
       <fieldset class="filters">
        <ul>
         <li>
-          <%= check_box(:categorySearch1, "art") %> <%= label_tag(:category, "Art") %>
+          <%= check_box_tag(:categorySearch1, "art") %> <%= label_tag(:category, "Art") %>
         </li>
         <li>
-          <%= check_box(:categorySearch2, "performance") %> <%= label_tag(:category, "Performance") %>
+          <%= check_box_tag(:categorySearch2, "performance") %> <%= label_tag(:category, "Performance") %>
         </li>
         <li>
-          <%= check_box(:categorySearch3, "science") %> <%= label_tag(:category, "Science/Tech") %>
+          <%= check_box_tag(:categorySearch3, "science") %> <%= label_tag(:category, "Science/Tech") %>
         </li>
         <li> <%= submit_tag "search by category", :name => nil, :class => 'button' %></li>
       </ul>
@@ -172,6 +172,3 @@
     }
   <% end %>
 </div>
-<!-- <link rel="stylesheet" type="text/css" href="/jquery.datetimepicker.css"/ > -->
-<!-- <script src="/jquery.js"></script>
-<script src="/jquery.datetimepicker.js"></script> -->
