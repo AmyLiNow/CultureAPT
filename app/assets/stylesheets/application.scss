@@ -236,10 +236,11 @@ MOBILE
   margin: 0 auto;
   padding-bottom: 15px;
 }
-.search, .field input#suggestion_restriction{
+.search, .field input#suggestion_restriction, .date-search {
   input[type="text"] {
-    //width: 60%;
+    width: 100%;
     margin-right: 2%;
+    margin-bottom: 10px;
     border: 1px #999 solid;
     padding-top: 2px;
   }
@@ -253,7 +254,8 @@ MOBILE
     }
   }
   input.button {
-    // width: 36%;
+    width: 100%;
+    margin-bottom: 10px;
   }
   input[type="checkbox"] {
     float: left;
@@ -275,6 +277,11 @@ MOBILE
     display: block;
     font-size: 15px;
     padding: 0 10px;
+  }
+}
+.map-view {
+  h2 {
+    text-align: center;
   }
 }
 #map {
@@ -410,7 +417,7 @@ TABLET
         float: left;
         width: 100%;
         input[type=text] {
-          width: 77%;
+          width: 71%;
         }
       }
       fieldset.filters {
@@ -434,9 +441,14 @@ TABLET
         margin-bottom: 10px;
         width: 100%;
         input[type=text] {
-          width: 37%;
+          width: 34%;
         }
       }
+    }
+  }
+  .date-search, .filters, .search-field {
+    input.button {
+      width: auto;
     }
   }
   footer {

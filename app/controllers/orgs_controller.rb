@@ -1,5 +1,6 @@
 class OrgsController < ApplicationController
   before_action :set_org, only: [:show, :edit, :update, :destroy]
+  http_basic_authenticate_with name: "yma", password: "ahsatan", except: [:index]
 
   # GET /orgs
   # GET /orgs.json

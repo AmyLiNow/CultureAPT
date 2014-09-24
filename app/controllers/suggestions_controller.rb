@@ -1,5 +1,6 @@
 class SuggestionsController < ApplicationController
   before_action :set_suggestion, only: [:show, :edit, :update, :destroy]
+  http_basic_authenticate_with name: "yma", password: "ahsatan", except: [:new, :create, :thank_you]
 
   def thank_you
     

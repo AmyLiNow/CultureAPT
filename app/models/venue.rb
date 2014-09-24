@@ -7,4 +7,9 @@ class Venue < ActiveRecord::Base
 	# geocoding
 	geocoded_by :address
 	after_validation :geocode #, :if => :address_changed?
+
+	def self.search(search)
+		where(['name LIKE ?', "%#{search}%"])
+	end
+
 end
