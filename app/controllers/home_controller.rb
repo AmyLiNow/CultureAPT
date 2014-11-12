@@ -22,7 +22,7 @@ class HomeController < ApplicationController
       @events =  Event.where("? <= start_date AND ? >= end_date", @startDateSearch, @endDateSearch)
       # @events = Event.where("@startDateSearch <= start_date AND @endDateSearch >= end_date")
     elsif params[:search].present?
-      @events = Event.search(params[:search]).order("start_date ASC")
+      @events = Event.search(params[:search]).where(:start_date => Date.today..Date.today.next_month.end_of_month).order('start_date ASC') 
     elsif params[:categorySearch1] && params[:categorySearch2] && params[:categorySearch3]
       @cats = params[:categorySearch1] + " " +params[:categorySearch2] + " " +params[:categorySearch3]
       @events = Event.findAllCategories( params[:categorySearch1], params[:categorySearch2], params[:categorySearch3])
