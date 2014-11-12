@@ -58,8 +58,8 @@
 
 		<%= form_tag(root_path, :method => "get") do %>
 			<fieldset class="date-search">
-				<%= text_field_tag :startDateSearch, params[:startDateSearch], placeholder: "start date", id: "from" %>
-				<%= text_field_tag :endDateSearch, params[:endDateSearch], placeholder: "end date", id: "to" %>
+				<%= text_field_tag :startDateSearch, params[:startDateSearch], placeholder: "start date", id: "from", autocomplete:"off" %>
+				<%= text_field_tag :endDateSearch, params[:endDateSearch], placeholder: "end date", id: "to", autocomplete:"off" %>
 				<%= submit_tag "search by date", :name => nil, :class => 'button' %> 
 			</fieldset>           
 		<% end %>
