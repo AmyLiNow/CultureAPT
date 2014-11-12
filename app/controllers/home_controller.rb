@@ -22,28 +22,28 @@ class HomeController < ApplicationController
       @events =  Event.where("? <= start_date AND ? >= end_date", @startDateSearch, @endDateSearch)
       # @events = Event.where("@startDateSearch <= start_date AND @endDateSearch >= end_date")
     elsif params[:search].present?
-      @events = Event.search(params[:search]).order("start_date ASC")
+      @events = Event.search(params[:search]).where(:start_date => Date.today..Date.today.next_month.end_of_month).order('start_date ASC') 
     elsif params[:categorySearch1] && params[:categorySearch2] && params[:categorySearch3]
       @cats = params[:categorySearch1] + " " +params[:categorySearch2] + " " +params[:categorySearch3]
-      @events = Event.findAllCategories( params[:categorySearch1], params[:categorySearch2], params[:categorySearch3])
+      @events = Event.findAllCategories( params[:categorySearch1], params[:categorySearch2], params[:categorySearch3]).where(:start_date => Date.today..Date.today.next_month.end_of_month).order('start_date ASC')
     elsif params[:categorySearch1] && params[:categorySearch2]
        @cats = params[:categorySearch1] + " " +params[:categorySearch2] 
-       @events = Event.findTwoCategories( params[:categorySearch1], params[:categorySearch2])
+       @events = Event.findTwoCategories( params[:categorySearch1], params[:categorySearch2]).where(:start_date => Date.today..Date.today.next_month.end_of_month).order('start_date ASC')
     elsif params[:categorySearch1] && params[:categorySearch3]
        @cats = params[:categorySearch1] + " " +params[:categorySearch3] 
-       @events = Event.findTwoCategories( params[:categorySearch1], params[:categorySearch3])
+       @events = Event.findTwoCategories( params[:categorySearch1], params[:categorySearch3]).where(:start_date => Date.today..Date.today.next_month.end_of_month).order('start_date ASC')
     elsif params[:categorySearch2] && params[:categorySearch3]
        @cats = params[:categorySearch2] + " " + params[:categorySearch3] 
-       @events = Event.findTwoCategories( params[:categorySearch2], params[:categorySearch3])
+       @events = Event.findTwoCategories( params[:categorySearch2], params[:categorySearch3]).where(:start_date => Date.today..Date.today.next_month.end_of_month).order('start_date ASC')
     elsif params[:categorySearch1]
        @cats = params[:categorySearch1]
-       @events = Event.findCategory( params[:categorySearch1])
+       @events = Event.findCategory( params[:categorySearch1]).where(:start_date => Date.today..Date.today.next_month.end_of_month).order('start_date ASC')
     elsif params[:categorySearch2]
        @cats = params[:categorySearch2]
-       @events = Event.findCategory( params[:categorySearch2])
+       @events = Event.findCategory( params[:categorySearch2]).where(:start_date => Date.today..Date.today.next_month.end_of_month).order('start_date ASC')
     elsif params[:categorySearch3]
        @cats = params[:categorySearch3]
-       @events = Event.findCategory( params[:categorySearch3])
+       @events = Event.findCategory( params[:categorySearch3]).where(:start_date => Date.today..Date.today.next_month.end_of_month).order('start_date ASC')
     else
       @events = Event.where(:start_date => Date.today..Date.today.next_month.end_of_month).order('start_date ASC') 
     end
