@@ -232,7 +232,7 @@ MOBILE
 }
 
 .inner-wrapper {
-  width: 300px;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 15px;
 }
@@ -286,7 +286,7 @@ MOBILE
 }
 #map {
   width: 100%;
-  height: 300px;
+  height: 500px;
   margin-bottom: 20px;
 }
 .listings {
@@ -361,7 +361,7 @@ TABLET
     top: 0;
     background: #fff;
     .inner-nav {
-      width: 640px;
+      width: 100%;
       display: block;
       margin: 0 auto;
     }
@@ -380,7 +380,7 @@ TABLET
       background: none;
       display: block;
       float: right;
-      width: 33%;
+      width: 15%;
       border: none;
       li {
         float: left;
@@ -408,11 +408,10 @@ TABLET
     }
   }
   .inner-wrapper {
-    width: 640px;
+    width: 100%;
     padding-top: 70px;
     .search {
-      width: 100%;
-      
+      margin-left: 35px;
       fieldset.search-field {
         float: left;
         width: 100%;
@@ -465,7 +464,7 @@ DESKTOP
 @media only screen and (min-width:960px) {
   .top-nav {
     .inner-nav {
-      width: 960px;
+      width: 100%;
     }
     .brand {
       height: 40px;
@@ -473,7 +472,7 @@ DESKTOP
     }
   }
   .inner-wrapper {
-    width: 960px;
+    width: 100%;
     .search {
       fieldset.search-field {
         width: 50%;
@@ -552,9 +551,9 @@ input#suggestion_subcategory[type="checkbox"], input#suggestion_category[type="c
 
 input#suggestion_ticket_rsvp_instruction[type="checkbox"]:checked, input#suggestion_subcategory[type="checkbox"]:checked, input#suggestion_category[type="checkbox"]:checked, input#suggestion_restriction[type="checkbox"]:checked {
   background: #4ad9d9;
-box-shadow: 0 0 0 2px #fff inset;
+  box-shadow: 0 0 0 2px #fff inset;
 }
 
 div#root {
-margin-top: 10px;
+  margin-top: 10px;
 }
