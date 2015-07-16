@@ -1,0 +1,645 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+ */
+/* line 27, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, input, select, article, aside, section, footer, address, nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  line-height: 1;
+  font-family: inherit;
+  text-align: left;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* line 43, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+a img, :link img, :visited img {
+  border: 0;
+}
+
+/* line 46, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 50, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+ol, ul {
+  list-style-position: outside;
+}
+
+/* line 55, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+strong, b {
+  font-weight: bold;
+}
+
+/* line 58, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+em {
+  font-style: italic;
+}
+
+/* line 62, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+q:before, q:after,
+blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 65, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+/*************************
+VARIABLES
+**************************/
+/*************************
+BASIC STYLES
+**************************/
+/* line 87, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+body {
+  background: #aaa;
+  width: 100%;
+  margin: 0 auto;
+  font: normal 11px "Open Sans", sans-serif;
+  line-height: 1.47058823529412;
+  color: #36b1bf;
+}
+
+/* line 95, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+section {
+  margin-bottom: 20px;
+}
+
+/* line 98, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+a {
+  text-decoration: none;
+  color: #36b1bf;
+}
+/* line 102, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 106, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+h1, h2, h4 {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 109, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+p {
+  margin: 0px 0px 12px 0px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.47058823529412;
+}
+
+/* line 115, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+h1, h2, h3, h4 {
+  margin: 0 0 12px;
+}
+
+/* line 119, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+h1 {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.2em;
+}
+
+/* line 125, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+h2, h2 a {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+/* line 131, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+h3 {
+  font-size: 15px;
+  margin: 0 0 10px;
+  font-weight: 800;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 139, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+h4 {
+  font-size: 12px;
+  margin: 0 0 5px;
+}
+
+/* line 143, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+input, select {
+  font-size: 12px;
+  height: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 150, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+input.button, a.button {
+  height: 35px;
+  background: #36b1bf;
+  color: #fff;
+  /*font-weight: 800;*/
+  min-width: 164px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 159, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+a.button {
+  padding: 10px 38px;
+  font-size: 12px;
+}
+
+/* line 163, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.clear-fix {
+  clear: both;
+}
+
+/* line 166, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.collapsed {
+  display: none;
+}
+
+/* line 169, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.desktop-only {
+  display: none;
+}
+
+/* line 172, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.hidden {
+  display: none;
+}
+
+/*************************
+MOBILE
+**************************/
+/* line 180, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.wrapper {
+  background: #f0f2f7;
+}
+
+/* line 183, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.top-nav {
+  width: 100%;
+  background: #fff;
+  border-bottom: 2px #ccc solid;
+  display: block;
+  min-height: 71px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+/* line 192, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.top-nav .brand {
+  display: block;
+  background: url(/assets/text_title.png) no-repeat center center;
+  background-size: contain;
+  width: 210px;
+  height: 71px;
+  text-indent: -9999px;
+  float: none;
+  z-index: 200;
+  margin: 0 auto;
+}
+/* line 203, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.top-nav .menu {
+  width: 100%;
+  background: #35A19C;
+  border-bottom: 1px solid #797979;
+  list-style: none;
+}
+/* line 208, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.top-nav .menu li {
+  text-align: center;
+  padding: 10px 0;
+}
+/* line 211, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.top-nav .menu li a {
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+/* line 220, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.menu-toggle {
+  position: absolute;
+  background: url(/assets/menu-btn-teal.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  text-indent: -999px;
+  top: 19px;
+  right: 11px;
+  display: block;
+}
+
+/* line 231, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.menu-toggle.x-icon {
+  background-position: left bottom;
+}
+
+/* line 235, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.inner-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+/* line 241, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.search input[type="text"], .field input#suggestion_restriction input[type="text"], .date-search input[type="text"] {
+  width: 100%;
+  margin-right: 2%;
+  margin-bottom: 10px;
+  border: 1px #999 solid;
+  padding-top: 2px;
+}
+/* line 248, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.search fieldset, .field input#suggestion_restriction fieldset, .date-search fieldset {
+  margin: 5px auto 5px;
+}
+/* line 250, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.search fieldset ul, .field input#suggestion_restriction fieldset ul, .date-search fieldset ul {
+  list-style: none;
+}
+/* line 252, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.search fieldset ul li, .field input#suggestion_restriction fieldset ul li, .date-search fieldset ul li {
+  height: 30px;
+}
+/* line 257, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.search input.button, .field input#suggestion_restriction input.button, .date-search input.button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* line 261, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.search input[type="checkbox"], .field input#suggestion_restriction input[type="checkbox"], .date-search input[type="checkbox"] {
+  float: left;
+  display: block;
+  width: 15px;
+  height: 15px;
+  color: #36b1bf;
+  background: #fff;
+  border: 1px #999 solid;
+  cursor: pointer;
+}
+/* line 270, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.search input[type="checkbox"]:checked, .field input#suggestion_restriction input[type="checkbox"]:checked, .date-search input[type="checkbox"]:checked {
+  background: #4ad9d9;
+  box-shadow: 0 0 0 2px #fff inset;
+}
+/* line 275, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.search label, .field input#suggestion_restriction label, .date-search label {
+  float: left;
+  width: 90%;
+  display: block;
+  font-size: 15px;
+  padding: 0 10px;
+}
+
+/* line 284, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.map-view h2 {
+  text-align: center;
+}
+
+/* line 288, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+#map {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+/* line 293, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.listings {
+  margin-bottom: 20px;
+}
+/* line 295, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.listings table {
+  width: 100%;
+}
+/* line 298, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.listings h2 {
+  text-align: center;
+}
+/* line 301, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.listings thead {
+  font-weight: 800;
+  font-size: 14px;
+}
+/* line 304, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.listings thead th {
+  padding: 0 5px 10px;
+  color: #555;
+}
+/* line 309, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.listings tr {
+  border-bottom: 1px #ccc solid;
+}
+/* line 311, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.listings tr td {
+  padding: 10px 5px;
+  line-height: 1.2;
+}
+/* line 314, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.listings tr td.title {
+  font-weight: bold;
+}
+
+/* line 320, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.event-listing {
+  margin-bottom: 30px;
+}
+
+/* line 323, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+footer {
+  background: #aaa;
+  color: #fff;
+  padding: 10px 0;
+}
+/* line 327, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+footer .inner-wrapper {
+  padding-top: 0;
+}
+/* line 331, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+footer .left ul, footer .right ul {
+  list-style: none;
+}
+/* line 336, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+footer .left .brand, footer .left .blurb {
+  text-align: center;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+/* line 344, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+footer .right .company h3, footer .right .company li, footer .right .company li a {
+  text-align: center;
+  color: #4ad9d9;
+}
+
+/*************************
+TABLET
+**************************/
+@media only screen and (min-width: 640px) {
+  /* line 357, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav {
+    position: fixed;
+    z-index: 600;
+    height: 60px;
+    min-height: 0;
+    top: 0;
+    background: #fff;
+  }
+  /* line 364, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .inner-nav {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  /* line 369, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .brand {
+    margin: 10px 0 0 10px;
+    float: left;
+    height: 34px;
+    width: 33%;
+    background: url(/assets/logo_desktop.png) no-repeat center center;
+    background-size: contain;
+  }
+  /* line 377, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .menu-toggle {
+    display: none;
+  }
+  /* line 380, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .menu {
+    background: none;
+    display: block;
+    float: right;
+    width: 15%;
+    border: none;
+  }
+  /* line 386, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .menu li {
+    float: left;
+    border-bottom: none;
+    height: 60px;
+    padding: 0;
+  }
+  /* line 391, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .menu li a {
+    font-size: 12px;
+    line-height: 60px;
+    padding: 0 10px;
+    text-align: center;
+    color: #aaa;
+  }
+  /* line 398, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .menu li:after {
+    content: "|";
+    color: #aaa;
+    margin-left: 2px;
+  }
+  /* line 404, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .menu li.last:after {
+    content: none;
+  }
+
+  /* line 411, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper {
+    width: 100%;
+    padding-top: 70px;
+  }
+  /* line 414, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search {
+    margin-left: 35px;
+  }
+  /* line 416, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.search-field {
+    float: left;
+    width: 100%;
+  }
+  /* line 419, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.search-field input[type=text] {
+    width: 71%;
+  }
+  /* line 423, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.filters {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  /* line 427, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.filters li {
+    float: left;
+    padding: 6px 18px;
+  }
+  /* line 430, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.filters li label {
+    width: auto;
+  }
+  /* line 435, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.filters li:last-of-type {
+    padding: 0;
+  }
+  /* line 439, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.date-search {
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  /* line 443, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.date-search input[type=text] {
+    width: 34%;
+  }
+
+  /* line 450, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .date-search input.button, .filters input.button, .search-field input.button {
+    width: auto;
+  }
+
+  /* line 456, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  footer .left, footer .right {
+    width: 50%;
+    float: left;
+  }
+}
+/*************************
+DESKTOP
+**************************/
+@media only screen and (min-width: 960px) {
+  /* line 467, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .inner-nav {
+    width: 100%;
+  }
+  /* line 470, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .brand {
+    height: 40px;
+    width: 22%;
+  }
+
+  /* line 475, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper {
+    width: 100%;
+  }
+  /* line 478, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.search-field {
+    width: 50%;
+  }
+  /* line 480, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.search-field input[type=text] {
+    width: 54.5%;
+  }
+  /* line 484, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.filters {
+    width: 50%;
+    /*margin-left: 2%;*/
+  }
+  /* line 487, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.filters li {
+    padding: 10px 0;
+  }
+  /* line 489, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.date-search {
+    margin: 20px auto 10px;
+    width: 50%;
+  }
+  /* line 492, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.date-search input[type=text] {
+    width: 26%;
+  }
+}
+/*************************
+MAP
+**************************/
+/* line 502, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.gm-style-iw {
+  overflow: hidden !important;
+  line-height: 1.35;
+}
+
+/*************************
+Scaffold pages
+**************************/
+/* line 510, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.field {
+  margin-top: 20px;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 516, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.topSpace {
+  margin-top: 60px;
+  padding-top: 10px;
+}
+
+/* suggestion form*/
+/* line 523, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+input#suggestion_restriction, input#suggestion_ticket_rsvp_instruction, input#suggestion_category, input#suggestion_subcategory {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  margin-right: 10px;
+}
+
+/* line 530, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.field ul {
+  width: 50%;
+}
+
+/* line 533, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.field li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+/* line 539, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+.field label {
+  width: 50%;
+}
+
+/* line 543, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+input#suggestion_subcategory[type="checkbox"], input#suggestion_category[type="checkbox"], input#suggestion_restriction[type="checkbox"] {
+  background: #fff;
+  border: 1px #999 solid;
+  margin-right: 5px;
+  margin-left: 15px;
+  padding-right: 0px;
+  padding-top: 5px;
+}
+
+/* line 553, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+input#suggestion_ticket_rsvp_instruction[type="checkbox"]:checked, input#suggestion_subcategory[type="checkbox"]:checked, input#suggestion_category[type="checkbox"]:checked, input#suggestion_restriction[type="checkbox"]:checked {
+  background: #4ad9d9;
+  box-shadow: 0 0 0 2px #fff inset;
+}
+
+/* line 558, /home/amy/Desktop/RailsProjects/heroku/CultureAPT/app/assets/stylesheets/application.scss */
+div#root {
+  margin-top: 10px;
+}
