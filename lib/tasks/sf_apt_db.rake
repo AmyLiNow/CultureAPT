@@ -84,11 +84,11 @@ task :sfarts => :environment  do
 			puts "it doesn't exist"
 		else 
 			# retrieve current existing one from database
-			org = Org.find_by_event_num(orgNumber)
+			org = Org.find_by_org_num(orgNumber)
 			puts "it exists"
 		end
 
-		Org.update(:name => orgName, :url => orgUrl, :org_num => orgNumber)
+		org.update(:name => orgName, :url => orgUrl, :org_num => orgNumber)
 
 		event = nil
 		if Event.find_by_event_num(eventNumber) == nil
