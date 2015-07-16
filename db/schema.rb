@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140920164157) do
+ActiveRecord::Schema.define(version: 20150716002204) do
 
   create_table "events", force: true do |t|
     t.integer  "org_id"
@@ -32,6 +32,12 @@ ActiveRecord::Schema.define(version: 20140920164157) do
     t.string   "subcategory"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "date_string"
+    t.string   "time_string"
+    t.boolean  "free"
+    t.integer  "event_num"
+    t.integer  "date_difference"
+    t.string   "event_phone"
   end
 
   create_table "orgs", force: true do |t|
@@ -39,6 +45,7 @@ ActiveRecord::Schema.define(version: 20140920164157) do
     t.string   "url"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "org_num"
   end
 
   create_table "suggestions", force: true do |t|
@@ -80,10 +87,11 @@ ActiveRecord::Schema.define(version: 20140920164157) do
     t.string   "zip"
     t.string   "url"
     t.string   "phone"
-    t.float    "latitude",   limit: 24
-    t.float    "longitude",  limit: 24
+    t.float    "latitude",           limit: 24
+    t.float    "longitude",          limit: 24
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "venue_neighborhood"
   end
 
 end
