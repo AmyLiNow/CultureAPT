@@ -111,11 +111,8 @@
 					<tr>
 						<td class="title" ><%= link_to @events.find_by_id(i).name, i%></td>
 						<td><%= Venue.find_by_id(@events.find_by_id(i).venue_id).name %>, 
-<<<<<<< HEAD
 						<%= Venue.find_by_id(@events.find_by_id(i).venue_id).street%> <br>,
-=======
-						<%= Venue.find_by_id(@events.find_by_id(i).venue_id).street%>,
->>>>>>> 437a8f4c59579ce38054290a8ab6514c50c63300
+
 						<%= Venue.find_by_id(@events.find_by_id(i).venue_id).city%></td>
 						<td><%= link_to @events.find_by_id(i).start_date, i%></td>
 						<td><%= link_to @events.find_by_id(i).start_time, i%></td>
