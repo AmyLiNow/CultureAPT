@@ -1,0 +1,2784 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+ */
+/* line 27, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, input, select, article, aside, section, footer, address, nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  line-height: 1;
+  font-family: inherit;
+  text-align: left;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* line 43, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+a img, :link img, :visited img {
+  border: 0;
+}
+
+/* line 46, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 50, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+ol, ul {
+  list-style-position: outside;
+}
+
+/* line 55, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+strong, b {
+  font-weight: bold;
+}
+
+/* line 58, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+em {
+  font-style: italic;
+}
+
+/* line 62, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+q:before, q:after,
+blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 65, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+/*************************
+VARIABLES
+**************************/
+/*************************
+BASIC STYLES
+**************************/
+/* line 87, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+body {
+  background: #aaa;
+  width: 100%;
+  margin: 0 auto;
+  font: normal 11px "Open Sans", sans-serif;
+  line-height: 1.47058823529412;
+  color: #36b1bf;
+}
+
+/* line 95, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+section {
+  margin-bottom: 20px;
+}
+
+/* line 98, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+a {
+  color: #36b1bf;
+  /* &:hover {
+    text-decoration: none;
+  } */
+}
+
+/* line 106, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+h1, h2, h4 {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 109, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+p {
+  margin: 0px 0px 12px 0px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.47058823529412;
+}
+
+/* line 115, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+h1, h2, h3, h4 {
+  margin: 0 0 12px;
+}
+
+/* line 119, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+h1 {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.2em;
+}
+
+/* line 125, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+h2, h2 a {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+/* line 131, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+h3 {
+  font-size: 15px;
+  margin: 0 0 10px;
+  font-weight: 800;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 139, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+h4 {
+  font-size: 12px;
+  margin: 0 0 5px;
+}
+
+/* line 143, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+input, select {
+  font-size: 12px;
+  height: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 150, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+input.button, a.button {
+  height: 35px;
+  background: #36b1bf;
+  color: #fff;
+  /*font-weight: 800;*/
+  min-width: 164px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 159, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+a.button {
+  padding: 10px 38px;
+  font-size: 12px;
+}
+
+/* line 163, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.clear-fix {
+  clear: both;
+}
+
+/* line 166, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.collapsed {
+  display: none;
+}
+
+/* line 169, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.desktop-only {
+  display: none;
+}
+
+/* line 172, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.hidden {
+  display: none;
+}
+
+/*************************
+MOBILE
+**************************/
+/* line 180, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.wrapper {
+  background: #f0f2f7;
+}
+
+/* line 183, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.top-nav {
+  width: 100%;
+  background: #fff;
+  border-bottom: 2px #ccc solid;
+  display: block;
+  min-height: 71px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+/* line 192, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.top-nav .brand {
+  display: block;
+  background: url(/assets/text_title.png) no-repeat center center;
+  background-size: contain;
+  width: 210px;
+  height: 71px;
+  text-indent: -9999px;
+  float: none;
+  z-index: 200;
+  margin: 0 auto;
+}
+/* line 203, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.top-nav .menu {
+  width: 100%;
+  background: #35A19C;
+  border-bottom: 1px solid #797979;
+  list-style: none;
+}
+/* line 208, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.top-nav .menu li {
+  text-align: center;
+  padding: 10px 0;
+}
+/* line 211, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.top-nav .menu li a {
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+/* line 220, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.menu-toggle {
+  position: absolute;
+  background: url(/assets/menu-btn-teal.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  text-indent: -999px;
+  top: 19px;
+  right: 11px;
+  display: block;
+}
+
+/* line 231, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.menu-toggle.x-icon {
+  background-position: left bottom;
+}
+
+/* line 235, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.inner-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+/* line 241, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.search input[type="text"], .field input#suggestion_restriction input[type="text"], .date-search input[type="text"] {
+  width: 100%;
+  margin-right: 2%;
+  margin-bottom: 10px;
+  border: 1px #999 solid;
+  padding-top: 2px;
+}
+/* line 248, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.search fieldset, .field input#suggestion_restriction fieldset, .date-search fieldset {
+  margin: 5px auto 5px;
+}
+/* line 250, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.search fieldset ul, .field input#suggestion_restriction fieldset ul, .date-search fieldset ul {
+  list-style: none;
+}
+/* line 252, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.search fieldset ul li, .field input#suggestion_restriction fieldset ul li, .date-search fieldset ul li {
+  height: 30px;
+}
+/* line 257, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.search input.button, .field input#suggestion_restriction input.button, .date-search input.button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* line 261, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.search input[type="checkbox"], .field input#suggestion_restriction input[type="checkbox"], .date-search input[type="checkbox"] {
+  float: left;
+  display: block;
+  width: 15px;
+  height: 15px;
+  color: #36b1bf;
+  background: #fff;
+  border: 1px #999 solid;
+  cursor: pointer;
+}
+/* line 270, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.search input[type="checkbox"]:checked, .field input#suggestion_restriction input[type="checkbox"]:checked, .date-search input[type="checkbox"]:checked {
+  background: #4ad9d9;
+  box-shadow: 0 0 0 2px #fff inset;
+}
+/* line 275, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.search label, .field input#suggestion_restriction label, .date-search label {
+  float: left;
+  width: 90%;
+  display: block;
+  font-size: 15px;
+  padding: 0 10px;
+}
+
+/* line 284, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.map-view h2 {
+  text-align: center;
+}
+
+/* line 288, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+#map {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+/* line 293, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.listings {
+  margin-bottom: 20px;
+}
+/* line 295, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.listings table {
+  width: 95%;
+  margin: 0 auto;
+}
+/* line 299, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.listings h2 {
+  text-align: center;
+}
+/* line 302, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.listings thead {
+  font-weight: 800;
+  font-size: 14px;
+}
+/* line 305, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.listings thead th {
+  padding: 0 5px 10px;
+  color: #555;
+}
+/* line 310, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.listings tr {
+  border-bottom: 1px #ccc solid;
+}
+/* line 312, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.listings tr td {
+  padding: 10px 5px;
+  line-height: 1.2;
+  width: 25%;
+}
+/* line 316, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.listings tr td.title {
+  font-weight: bold;
+}
+
+/* line 322, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.event-listing {
+  margin-bottom: 30px;
+}
+
+/* line 325, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+footer {
+  background: #aaa;
+  color: #fff;
+  padding: 10px 0;
+}
+/* line 329, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+footer .inner-wrapper {
+  padding-top: 0;
+}
+/* line 333, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+footer .left ul, footer .right ul {
+  list-style: none;
+}
+/* line 338, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+footer .left .brand, footer .left .blurb {
+  text-align: center;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+/* line 346, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+footer .right .company h3, footer .right .company li, footer .right .company li a {
+  text-align: center;
+  color: #4ad9d9;
+}
+
+/*************************
+TABLET
+**************************/
+@media only screen and (min-width: 640px) {
+  /* line 359, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav {
+    position: fixed;
+    z-index: 600;
+    height: 60px;
+    min-height: 0;
+    top: 0;
+    background: #fff;
+  }
+  /* line 366, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .inner-nav {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  /* line 371, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .brand {
+    margin: 10px 0 0 10px;
+    float: left;
+    height: 34px;
+    width: 33%;
+    background: url(/assets/logo_beta_desktop.png) no-repeat center center;
+    background-size: contain;
+  }
+  /* line 379, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .menu-toggle {
+    display: none;
+  }
+  /* line 382, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .menu {
+    background: none;
+    display: block;
+    float: right;
+    width: 15%;
+    border: none;
+  }
+  /* line 388, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .menu li {
+    float: left;
+    border-bottom: none;
+    height: 60px;
+    padding: 0;
+  }
+  /* line 393, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .menu li a {
+    font-size: 12px;
+    line-height: 60px;
+    padding: 0 10px;
+    text-align: center;
+    color: #aaa;
+  }
+  /* line 400, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .menu li:after {
+    content: "|";
+    color: #aaa;
+    margin-left: 2px;
+  }
+  /* line 406, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .menu li.last:after {
+    content: none;
+  }
+
+  /* line 413, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper {
+    width: 100%;
+    padding-top: 70px;
+  }
+  /* line 416, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search {
+    margin-left: 35px;
+  }
+  /* line 418, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.search-field {
+    float: left;
+    width: 100%;
+  }
+  /* line 421, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.search-field input[type=text] {
+    width: 71%;
+  }
+  /* line 425, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.filters {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  /* line 429, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.filters li {
+    float: left;
+    padding: 6px 18px;
+  }
+  /* line 432, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.filters li label {
+    width: auto;
+  }
+  /* line 437, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.filters li:last-of-type {
+    padding: 0;
+  }
+  /* line 441, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.date-search {
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  /* line 445, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.date-search input[type=text] {
+    width: 34%;
+  }
+
+  /* line 452, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .date-search input.button, .filters input.button, .search-field input.button {
+    width: auto;
+  }
+
+  /* line 458, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  footer .left, footer .right {
+    width: 50%;
+    float: left;
+  }
+}
+/*************************
+DESKTOP
+**************************/
+@media only screen and (min-width: 960px) {
+  /* line 469, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .inner-nav {
+    width: 100%;
+  }
+  /* line 472, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .top-nav .brand {
+    height: 47px;
+    width: 20%;
+  }
+
+  /* line 477, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper {
+    width: 100%;
+  }
+  /* line 480, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.search-field {
+    width: 50%;
+  }
+  /* line 482, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.search-field input[type=text] {
+    width: 54.5%;
+  }
+  /* line 486, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.filters {
+    width: 50%;
+    /*margin-left: 2%;*/
+  }
+  /* line 489, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.filters li {
+    padding: 10px 0;
+  }
+  /* line 491, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.date-search {
+    margin: 20px auto 10px;
+    width: 50%;
+  }
+  /* line 494, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+  .inner-wrapper .search fieldset.date-search input[type=text] {
+    width: 26%;
+  }
+}
+/*************************
+MAP
+**************************/
+/* line 504, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.gm-style-iw {
+  overflow: hidden !important;
+  line-height: 1.35;
+}
+
+/*************************
+Scaffold pages
+**************************/
+/* line 512, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.field {
+  margin-top: 20px;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 518, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.topSpace {
+  margin-top: 60px;
+  padding-top: 10px;
+}
+
+/* suggestion form*/
+/* line 525, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+input#suggestion_restriction, input#suggestion_ticket_rsvp_instruction, input#suggestion_category, input#suggestion_subcategory {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  margin-right: 10px;
+}
+
+/* line 532, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.field ul {
+  width: 50%;
+}
+
+/* line 535, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.field li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+/* line 541, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.field label {
+  width: 50%;
+}
+
+/* line 545, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+input#suggestion_subcategory[type="checkbox"], input#suggestion_category[type="checkbox"], input#suggestion_restriction[type="checkbox"] {
+  background: #fff;
+  border: 1px #999 solid;
+  margin-right: 5px;
+  margin-left: 15px;
+  padding-right: 0px;
+  padding-top: 5px;
+}
+
+/* line 555, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+input#suggestion_ticket_rsvp_instruction[type="checkbox"]:checked, input#suggestion_subcategory[type="checkbox"]:checked, input#suggestion_category[type="checkbox"]:checked, input#suggestion_restriction[type="checkbox"]:checked {
+  background: #4ad9d9;
+  box-shadow: 0 0 0 2px #fff inset;
+}
+
+/* line 560, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+div#root {
+  margin-top: 10px;
+}
+
+/*datepicker*/
+/*! jQuery UI - v1.11.1 - 2014-08-13
+* http://jqueryui.com
+* Includes: core.css, accordion.css, autocomplete.css, button.css, datepicker.css, dialog.css, draggable.css, menu.css, progressbar.css, resizable.css, selectable.css, selectmenu.css, slider.css, sortable.css, spinner.css, tabs.css, tooltip.css, theme.css
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Verdana%2CArial%2Csans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=cccccc&bgTextureHeader=highlight_soft&bgImgOpacityHeader=75&borderColorHeader=aaaaaa&fcHeader=222222&iconColorHeader=222222&bgColorContent=ffffff&bgTextureContent=flat&bgImgOpacityContent=75&borderColorContent=aaaaaa&fcContent=222222&iconColorContent=222222&bgColorDefault=e6e6e6&bgTextureDefault=glass&bgImgOpacityDefault=75&borderColorDefault=d3d3d3&fcDefault=555555&iconColorDefault=888888&bgColorHover=dadada&bgTextureHover=glass&bgImgOpacityHover=75&borderColorHover=999999&fcHover=212121&iconColorHover=454545&bgColorActive=ffffff&bgTextureActive=glass&bgImgOpacityActive=65&borderColorActive=aaaaaa&fcActive=212121&iconColorActive=454545&bgColorHighlight=fbf9ee&bgTextureHighlight=glass&bgImgOpacityHighlight=55&borderColorHighlight=fcefa1&fcHighlight=363636&iconColorHighlight=2e83ff&bgColorError=fef1ec&bgTextureError=glass&bgImgOpacityError=95&borderColorError=cd0a0a&fcError=cd0a0a&iconColorError=cd0a0a&bgColorOverlay=aaaaaa&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
+* Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
+/* Layout helpers
+----------------------------------*/
+/* line 577, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-helper-hidden {
+  display: none;
+}
+
+/* line 581, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-helper-hidden-accessible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 592, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-helper-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+}
+
+/* line 603, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-helper-clearfix {
+  min-height: 0;
+  /* support: IE7 */
+}
+/* line 604, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-helper-clearfix:before {
+  content: "";
+  display: table;
+  border-collapse: collapse;
+}
+/* line 609, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-helper-clearfix:after {
+  content: "";
+  display: table;
+  border-collapse: collapse;
+  clear: both;
+}
+
+/* line 619, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-helper-zfix {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  filter: Alpha(Opacity=0);
+  /* support: IE8 */
+}
+
+/* line 630, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-front {
+  z-index: 100;
+}
+
+/* Interaction Cues
+----------------------------------*/
+/* line 637, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-disabled {
+  cursor: default !important;
+}
+
+/* Icons
+----------------------------------*/
+/* states and images */
+/* line 646, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+/* Misc visuals
+----------------------------------*/
+/* Overlays */
+/* line 658, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-widget-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 667, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-accordion .ui-accordion-header {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  margin: 2px 0 0 0;
+  padding: .5em .5em .5em .7em;
+  min-height: 0;
+  /* support: IE7 */
+  font-size: 100%;
+}
+/* line 677, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-accordion .ui-accordion-icons {
+  padding-left: 2.2em;
+}
+/* line 679, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+  padding-left: 2.2em;
+}
+/* line 683, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+  position: absolute;
+  left: .5em;
+  top: 50%;
+  margin-top: -8px;
+}
+/* line 689, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-accordion .ui-accordion-content {
+  padding: 1em 2.2em;
+  border-top: 0;
+  overflow: auto;
+}
+
+/* line 696, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-autocomplete {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: default;
+}
+
+/* line 703, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-button {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  line-height: normal;
+  margin-right: .1em;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  overflow: visible;
+  /* removes extra width in IE */
+  text-decoration: none;
+}
+/* line 715, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-button:link, .ui-button:visited, .ui-button:hover, .ui-button:active {
+  text-decoration: none;
+}
+
+/* to make room for the icon, a width needs to be set here */
+/* line 722, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-button-icon-only {
+  width: 2.2em;
+}
+
+/* button elements seem to need a little more width */
+/* line 728, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+button.ui-button-icon-only {
+  width: 2.4em;
+}
+
+/* line 732, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-button-icons-only {
+  width: 3.4em;
+}
+
+/* line 736, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+button.ui-button-icons-only {
+  width: 3.7em;
+}
+
+/* button text element */
+/* line 742, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-button .ui-button-text {
+  display: block;
+  line-height: normal;
+}
+
+/* line 747, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-button-text-only .ui-button-text {
+  padding: .4em 1em;
+}
+
+/* line 751, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text {
+  padding: .4em;
+  text-indent: -9999999px;
+}
+
+/* line 756, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-button-text {
+  padding: .4em 1em .4em 2.1em;
+}
+
+/* line 760, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-button-text-icon-secondary .ui-button-text {
+  padding: .4em 2.1em .4em 1em;
+}
+
+/* line 764, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-button-text-icons .ui-button-text {
+  padding: .4em 2.1em .4em 1em;
+  padding-left: 2.1em;
+  padding-right: 2.1em;
+}
+
+/* no icon support for input elements, provide padding by default */
+/* line 772, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+input.ui-button {
+  padding: .4em 1em;
+}
+
+/* button icon element(s) */
+/* line 778, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+}
+
+/* line 784, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-button-icon-only .ui-icon {
+  left: 50%;
+  margin-left: -8px;
+}
+
+/* line 789, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-button-text-icon-primary .ui-button-icon-primary, .ui-button-text-icons .ui-button-icon-primary, .ui-button-icons-only .ui-button-icon-primary {
+  left: .5em;
+}
+
+/* line 793, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-button-text-icon-secondary .ui-button-icon-secondary, .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary {
+  right: .5em;
+}
+
+/* button sets */
+/* line 799, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-buttonset {
+  margin-right: 7px;
+}
+/* line 801, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-buttonset .ui-button {
+  margin-left: 0;
+  margin-right: -0.3em;
+}
+
+/* workarounds */
+/* reset extra padding in Firefox, see h5bp.com/l */
+/* line 810, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 815, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker {
+  width: 17em;
+  padding: .2em .2em 0;
+  display: none;
+}
+/* line 819, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker .ui-datepicker-header {
+  position: relative;
+  padding: .2em 0;
+}
+/* line 823, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  position: absolute;
+  top: 2px;
+  width: 1.8em;
+  height: 1.8em;
+}
+/* line 829, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {
+  top: 1px;
+}
+/* line 832, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker .ui-datepicker-prev {
+  left: 2px;
+}
+/* line 835, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker .ui-datepicker-next {
+  right: 2px;
+}
+/* line 838, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker .ui-datepicker-prev-hover {
+  left: 1px;
+}
+/* line 841, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker .ui-datepicker-next-hover {
+  right: 1px;
+}
+/* line 844, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 50%;
+  margin-top: -8px;
+}
+/* line 852, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 2.3em;
+  line-height: 1.8em;
+  text-align: center;
+}
+/* line 856, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker .ui-datepicker-title select {
+  font-size: 1em;
+  margin: 1px 0;
+}
+/* line 862, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+  width: 45%;
+}
+/* line 866, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker table {
+  width: 100%;
+  margin-left: 10%;
+  font-size: .9em;
+  border-collapse: collapse;
+  margin: 0 0 .4em;
+}
+/* line 873, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker th {
+  width: 20%;
+  padding: .7em .3em;
+  text-align: center;
+  font-weight: bold;
+  border: 0;
+}
+/* line 880, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker td {
+  border: 0;
+  padding: 1px;
+}
+/* line 883, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker td span, .ui-datepicker td a {
+  display: block;
+  padding: .2em;
+  text-align: right;
+  text-decoration: none;
+}
+/* line 890, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker .ui-datepicker-buttonpane {
+  background-image: none;
+  margin: .7em 0 0 0;
+  padding: 0 .2em;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+/* line 897, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker .ui-datepicker-buttonpane button {
+  float: right;
+  margin: .5em .2em .4em;
+  cursor: pointer;
+  padding: .2em .6em .3em .6em;
+  width: auto;
+  overflow: visible;
+}
+/* line 904, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+  float: left;
+}
+/* line 909, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker.ui-datepicker-multi {
+  width: auto;
+}
+
+/* with multiple calendars */
+/* line 916, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-multi .ui-datepicker-group {
+  float: left;
+}
+/* line 918, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-multi .ui-datepicker-group table {
+  width: 95%;
+  margin: 0 auto .4em;
+}
+
+/* line 924, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-multi-2 .ui-datepicker-group {
+  width: 50%;
+}
+
+/* line 928, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-multi-3 .ui-datepicker-group {
+  width: 33.3%;
+}
+
+/* line 932, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-multi-4 .ui-datepicker-group {
+  width: 25%;
+}
+
+/* line 937, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header, .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+  border-left-width: 0;
+}
+/* line 940, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+  clear: left;
+}
+
+/* line 945, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-row-break {
+  clear: both;
+  width: 100%;
+  font-size: 0;
+}
+
+/* RTL support */
+/* line 953, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-rtl {
+  direction: rtl;
+}
+/* line 955, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-rtl .ui-datepicker-prev {
+  right: 2px;
+  left: auto;
+}
+/* line 959, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-rtl .ui-datepicker-next {
+  left: 2px;
+  right: auto;
+}
+/* line 963, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+  right: 1px;
+  left: auto;
+}
+/* line 967, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+  left: 1px;
+  right: auto;
+}
+/* line 971, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+  clear: right;
+}
+/* line 973, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+  float: left;
+}
+/* line 975, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current {
+  float: right;
+}
+/* line 980, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-rtl .ui-datepicker-group {
+  float: right;
+}
+/* line 983, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header, .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+  border-right-width: 0;
+  border-left-width: 1px;
+}
+
+/* line 989, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-dialog {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .2em;
+  outline: 0;
+}
+/* line 996, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-dialog .ui-dialog-titlebar {
+  padding: .4em 1em;
+  position: relative;
+}
+/* line 1000, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-dialog .ui-dialog-title {
+  float: left;
+  margin: .1em 0;
+  white-space: nowrap;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 1008, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-dialog .ui-dialog-titlebar-close {
+  position: absolute;
+  right: .3em;
+  top: 50%;
+  width: 20px;
+  margin: -10px 0 0 0;
+  padding: 1px;
+  height: 20px;
+}
+/* line 1017, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-dialog .ui-dialog-content {
+  position: relative;
+  border: 0;
+  padding: .5em 1em;
+  background: none;
+  overflow: auto;
+}
+/* line 1024, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-dialog .ui-dialog-buttonpane {
+  text-align: left;
+  border-width: 1px 0 0 0;
+  background-image: none;
+  margin-top: .5em;
+  padding: .3em 1em .5em .4em;
+}
+/* line 1030, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+  float: right;
+}
+/* line 1033, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-dialog .ui-dialog-buttonpane button {
+  margin: .5em .4em .5em 0;
+  cursor: pointer;
+}
+/* line 1038, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-dialog .ui-resizable-se {
+  width: 12px;
+  height: 12px;
+  right: -5px;
+  bottom: -5px;
+  background-position: 16px 16px;
+}
+
+/* line 1047, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-draggable .ui-dialog-titlebar {
+  cursor: move;
+}
+
+/* line 1051, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-draggable-handle {
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+/* line 1056, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  outline: none;
+}
+/* line 1062, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-menu .ui-menu {
+  position: absolute;
+}
+/* line 1065, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-menu .ui-menu-item {
+  position: relative;
+  margin: 0;
+  padding: 3px 1em 3px .4em;
+  cursor: pointer;
+  min-height: 0;
+  /* support: IE7 */
+  /* support: IE10, see #8844 */
+  list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+}
+/* line 1075, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-menu .ui-menu-divider {
+  margin: 5px 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-width: 1px 0 0 0;
+}
+/* line 1082, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-menu .ui-state-focus, .ui-menu .ui-state-active {
+  margin: -1px;
+}
+
+/* icon support */
+/* line 1089, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-menu-icons {
+  position: relative;
+}
+/* line 1091, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-menu-icons .ui-menu-item {
+  padding-left: 2em;
+}
+
+/* left-aligned */
+/* line 1099, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-menu .ui-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: .2em;
+  margin: auto 0;
+}
+/* line 1106, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-menu .ui-menu-icon {
+  left: auto;
+  right: 0;
+}
+
+/* right-aligned */
+/* line 1114, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-progressbar {
+  height: 2em;
+  text-align: left;
+  overflow: hidden;
+}
+/* line 1118, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-progressbar .ui-progressbar-value {
+  margin: -1px;
+  height: 100%;
+}
+/* line 1122, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-progressbar .ui-progressbar-overlay {
+  background: url("data:image/gif;base64,R0lGODlhKAAoAIABAAAAAP///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQJAQABACwAAAAAKAAoAAACkYwNqXrdC52DS06a7MFZI+4FHBCKoDeWKXqymPqGqxvJrXZbMx7Ttc+w9XgU2FB3lOyQRWET2IFGiU9m1frDVpxZZc6bfHwv4c1YXP6k1Vdy292Fb6UkuvFtXpvWSzA+HycXJHUXiGYIiMg2R6W459gnWGfHNdjIqDWVqemH2ekpObkpOlppWUqZiqr6edqqWQAAIfkECQEAAQAsAAAAACgAKAAAApSMgZnGfaqcg1E2uuzDmmHUBR8Qil95hiPKqWn3aqtLsS18y7G1SzNeowWBENtQd+T1JktP05nzPTdJZlR6vUxNWWjV+vUWhWNkWFwxl9VpZRedYcflIOLafaa28XdsH/ynlcc1uPVDZxQIR0K25+cICCmoqCe5mGhZOfeYSUh5yJcJyrkZWWpaR8doJ2o4NYq62lAAACH5BAkBAAEALAAAAAAoACgAAAKVDI4Yy22ZnINRNqosw0Bv7i1gyHUkFj7oSaWlu3ovC8GxNso5fluz3qLVhBVeT/Lz7ZTHyxL5dDalQWPVOsQWtRnuwXaFTj9jVVh8pma9JjZ4zYSj5ZOyma7uuolffh+IR5aW97cHuBUXKGKXlKjn+DiHWMcYJah4N0lYCMlJOXipGRr5qdgoSTrqWSq6WFl2ypoaUAAAIfkECQEAAQAsAAAAACgAKAAAApaEb6HLgd/iO7FNWtcFWe+ufODGjRfoiJ2akShbueb0wtI50zm02pbvwfWEMWBQ1zKGlLIhskiEPm9R6vRXxV4ZzWT2yHOGpWMyorblKlNp8HmHEb/lCXjcW7bmtXP8Xt229OVWR1fod2eWqNfHuMjXCPkIGNileOiImVmCOEmoSfn3yXlJWmoHGhqp6ilYuWYpmTqKUgAAIfkECQEAAQAsAAAAACgAKAAAApiEH6kb58biQ3FNWtMFWW3eNVcojuFGfqnZqSebuS06w5V80/X02pKe8zFwP6EFWOT1lDFk8rGERh1TTNOocQ61Hm4Xm2VexUHpzjymViHrFbiELsefVrn6XKfnt2Q9G/+Xdie499XHd2g4h7ioOGhXGJboGAnXSBnoBwKYyfioubZJ2Hn0RuRZaflZOil56Zp6iioKSXpUAAAh+QQJAQABACwAAAAAKAAoAAACkoQRqRvnxuI7kU1a1UU5bd5tnSeOZXhmn5lWK3qNTWvRdQxP8qvaC+/yaYQzXO7BMvaUEmJRd3TsiMAgswmNYrSgZdYrTX6tSHGZO73ezuAw2uxuQ+BbeZfMxsexY35+/Qe4J1inV0g4x3WHuMhIl2jXOKT2Q+VU5fgoSUI52VfZyfkJGkha6jmY+aaYdirq+lQAACH5BAkBAAEALAAAAAAoACgAAAKWBIKpYe0L3YNKToqswUlvznigd4wiR4KhZrKt9Upqip61i9E3vMvxRdHlbEFiEXfk9YARYxOZZD6VQ2pUunBmtRXo1Lf8hMVVcNl8JafV38aM2/Fu5V16Bn63r6xt97j09+MXSFi4BniGFae3hzbH9+hYBzkpuUh5aZmHuanZOZgIuvbGiNeomCnaxxap2upaCZsq+1kAACH5BAkBAAEALAAAAAAoACgAAAKXjI8By5zf4kOxTVrXNVlv1X0d8IGZGKLnNpYtm8Lr9cqVeuOSvfOW79D9aDHizNhDJidFZhNydEahOaDH6nomtJjp1tutKoNWkvA6JqfRVLHU/QUfau9l2x7G54d1fl995xcIGAdXqMfBNadoYrhH+Mg2KBlpVpbluCiXmMnZ2Sh4GBqJ+ckIOqqJ6LmKSllZmsoq6wpQAAAh+QQJAQABACwAAAAAKAAoAAAClYx/oLvoxuJDkU1a1YUZbJ59nSd2ZXhWqbRa2/gF8Gu2DY3iqs7yrq+xBYEkYvFSM8aSSObE+ZgRl1BHFZNr7pRCavZ5BW2142hY3AN/zWtsmf12p9XxxFl2lpLn1rseztfXZjdIWIf2s5dItwjYKBgo9yg5pHgzJXTEeGlZuenpyPmpGQoKOWkYmSpaSnqKileI2FAAACH5BAkBAAEALAAAAAAoACgAAAKVjB+gu+jG4kORTVrVhRlsnn2dJ3ZleFaptFrb+CXmO9OozeL5VfP99HvAWhpiUdcwkpBH3825AwYdU8xTqlLGhtCosArKMpvfa1mMRae9VvWZfeB2XfPkeLmm18lUcBj+p5dnN8jXZ3YIGEhYuOUn45aoCDkp16hl5IjYJvjWKcnoGQpqyPlpOhr3aElaqrq56Bq7VAAAOw==");
+  height: 100%;
+  filter: alpha(opacity=25);
+  /* support: IE8 */
+  opacity: 0.25;
+}
+
+/* line 1131, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-progressbar-indeterminate .ui-progressbar-value {
+  background-image: none;
+}
+
+/* line 1135, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-resizable {
+  position: relative;
+}
+
+/* line 1139, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-resizable-handle {
+  position: absolute;
+  font-size: 0.1px;
+  display: block;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+/* line 1147, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle {
+  display: none;
+}
+
+/* line 1151, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-resizable-n {
+  cursor: n-resize;
+  height: 7px;
+  width: 100%;
+  top: -5px;
+  left: 0;
+}
+
+/* line 1159, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-resizable-s {
+  cursor: s-resize;
+  height: 7px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+}
+
+/* line 1167, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-resizable-e {
+  cursor: e-resize;
+  width: 7px;
+  right: -5px;
+  top: 0;
+  height: 100%;
+}
+
+/* line 1175, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-resizable-w {
+  cursor: w-resize;
+  width: 7px;
+  left: -5px;
+  top: 0;
+  height: 100%;
+}
+
+/* line 1183, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-resizable-se {
+  cursor: se-resize;
+  width: 12px;
+  height: 12px;
+  right: 1px;
+  bottom: 1px;
+}
+
+/* line 1191, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-resizable-sw {
+  cursor: sw-resize;
+  width: 9px;
+  height: 9px;
+  left: -5px;
+  bottom: -5px;
+}
+
+/* line 1199, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-resizable-nw {
+  cursor: nw-resize;
+  width: 9px;
+  height: 9px;
+  left: -5px;
+  top: -5px;
+}
+
+/* line 1207, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-resizable-ne {
+  cursor: ne-resize;
+  width: 9px;
+  height: 9px;
+  right: -5px;
+  top: -5px;
+}
+
+/* line 1215, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-selectable {
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+/* line 1220, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-selectable-helper {
+  position: absolute;
+  z-index: 100;
+  border: 1px dotted black;
+}
+
+/* line 1226, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-selectmenu-menu {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+/* line 1233, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-selectmenu-menu .ui-menu {
+  overflow: auto;
+  /* Support: IE7 */
+  overflow-x: hidden;
+  padding-bottom: 1px;
+}
+/* line 1238, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-selectmenu-menu .ui-menu .ui-selectmenu-optgroup {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 2px 0.4em;
+  margin: 0.5em 0 0 0;
+  height: auto;
+  border: 0;
+}
+
+/* line 1250, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-selectmenu-open {
+  display: block;
+}
+
+/* line 1254, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-selectmenu-button {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 1261, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-selectmenu-button span.ui-icon {
+  right: 0.5em;
+  left: auto;
+  margin-top: -8px;
+  position: absolute;
+  top: 50%;
+}
+/* line 1268, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-selectmenu-button span.ui-selectmenu-text {
+  text-align: left;
+  padding: 0.4em 2.1em 0.4em 1em;
+  display: block;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* line 1280, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-slider {
+  position: relative;
+  text-align: left;
+}
+/* line 1283, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 1.2em;
+  height: 1.2em;
+  cursor: default;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+/* line 1292, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+}
+/* line 1301, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-slider.ui-state-disabled .ui-slider-handle, .ui-slider.ui-state-disabled .ui-slider-range {
+  filter: inherit;
+}
+
+/* support: IE8 - See #6727 */
+/* line 1309, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-slider-horizontal {
+  height: .8em;
+}
+/* line 1311, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-slider-horizontal .ui-slider-handle {
+  top: -0.3em;
+  margin-left: -0.6em;
+}
+/* line 1315, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+/* line 1319, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+/* line 1322, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+
+/* line 1327, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-slider-vertical {
+  width: .8em;
+  height: 100px;
+}
+/* line 1330, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-slider-vertical .ui-slider-handle {
+  left: -0.3em;
+  margin-left: 0;
+  margin-bottom: -0.6em;
+}
+/* line 1335, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-slider-vertical .ui-slider-range {
+  left: 0;
+  width: 100%;
+}
+/* line 1339, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-slider-vertical .ui-slider-range-min {
+  bottom: 0;
+}
+/* line 1342, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-slider-vertical .ui-slider-range-max {
+  top: 0;
+}
+
+/* line 1347, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-sortable-handle {
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+/* line 1352, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-spinner {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0;
+  vertical-align: middle;
+}
+
+/* line 1360, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-spinner-input {
+  border: none;
+  background: none;
+  color: inherit;
+  padding: 0;
+  margin: .2em 0;
+  vertical-align: middle;
+  margin-left: .4em;
+  margin-right: 22px;
+}
+
+/* line 1371, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-spinner-button {
+  width: 16px;
+  height: 50%;
+  font-size: .5em;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  position: absolute;
+  cursor: default;
+  display: block;
+  overflow: hidden;
+  right: 0;
+}
+
+/* more specificity required here to override default borders */
+/* line 1388, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-spinner a.ui-spinner-button {
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+}
+/* line 1393, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-spinner .ui-icon {
+  position: absolute;
+  margin-top: -8px;
+  top: 50%;
+  left: 0;
+}
+
+/* vertically center icon */
+/* line 1403, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-spinner-up {
+  top: 0;
+}
+
+/* line 1407, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-spinner-down {
+  bottom: 0;
+}
+
+/* TR overrides */
+/* line 1413, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-spinner .ui-icon-triangle-1-s {
+  /* need to fix icons sprite */
+  background-position: -65px -16px;
+}
+
+/* line 1418, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-tabs {
+  position: relative;
+  /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+  padding: .2em;
+}
+/* line 1422, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-tabs .ui-tabs-nav {
+  margin: 0;
+  padding: .2em .2em 0;
+}
+/* line 1425, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-tabs .ui-tabs-nav li {
+  list-style: none;
+  float: left;
+  position: relative;
+  top: 0;
+  margin: 1px .2em 0 0;
+  border-bottom-width: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+/* line 1435, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  float: left;
+  padding: .5em 1em;
+  text-decoration: none;
+}
+/* line 1441, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  margin-bottom: -1px;
+  padding-bottom: 1px;
+}
+/* line 1444, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+  cursor: text;
+}
+/* line 1448, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+  cursor: text;
+}
+
+/* line 1455, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+  cursor: pointer;
+}
+
+/* line 1459, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-tabs .ui-tabs-panel {
+  display: block;
+  border-width: 0;
+  padding: 1em 1.4em;
+  background: none;
+}
+
+/* line 1466, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-tooltip {
+  padding: 8px;
+  position: absolute;
+  z-index: 9999;
+  max-width: 300px;
+  -webkit-box-shadow: 0 0 5px #aaa;
+  box-shadow: 0 0 5px #aaa;
+}
+
+/* line 1475, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+body .ui-tooltip {
+  border-width: 2px;
+}
+
+/* Component containers
+----------------------------------*/
+/* line 1482, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-widget {
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 1.1em;
+}
+/* line 1485, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-widget .ui-widget {
+  font-size: 1em;
+}
+/* line 1488, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 1em;
+}
+
+/* line 1494, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-widget-content {
+  border: 1px solid #aaaaaa;
+  background: white url("images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
+  color: #222222;
+}
+/* line 1498, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-widget-content a {
+  color: #222222;
+}
+
+/* line 1503, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-widget-header {
+  border: 1px solid #aaaaaa;
+  background: #cccccc url("images/ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;
+  color: #222222;
+  font-weight: bold;
+}
+/* line 1508, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-widget-header a {
+  color: #222222;
+}
+
+/* Interaction states
+----------------------------------*/
+/* line 1516, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 1px solid #d3d3d3;
+  background: #e6e6e6 url("images/ui-bg_glass_75_e6e6e6_1x400.png") 50% 50% repeat-x;
+  font-weight: normal;
+  color: #555555;
+}
+
+/* line 1523, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-default a {
+  color: #555555;
+  text-decoration: none;
+}
+/* line 1526, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-default a:link, .ui-state-default a:visited {
+  color: #555555;
+  text-decoration: none;
+}
+
+/* line 1532, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+  border: 1px solid #999999;
+  background: #dadada url("images/ui-bg_glass_75_dadada_1x400.png") 50% 50% repeat-x;
+  font-weight: normal;
+  color: #212121;
+}
+
+/* line 1539, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-hover a {
+  color: #212121;
+  text-decoration: none;
+}
+/* line 1542, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited {
+  color: #212121;
+  text-decoration: none;
+}
+
+/* line 1548, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-focus a {
+  color: #212121;
+  text-decoration: none;
+}
+/* line 1551, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-focus a:hover, .ui-state-focus a:link, .ui-state-focus a:visited {
+  color: #212121;
+  text-decoration: none;
+}
+
+/* line 1557, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  border: 1px solid #aaaaaa;
+  background: white url("images/ui-bg_glass_65_ffffff_1x400.png") 50% 50% repeat-x;
+  font-weight: normal;
+  color: #212121;
+}
+
+/* line 1564, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-active a {
+  color: #212121;
+  text-decoration: none;
+}
+/* line 1567, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-active a:link, .ui-state-active a:visited {
+  color: #212121;
+  text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+/* line 1576, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  border: 1px solid #fcefa1;
+  background: #fbf9ee url("images/ui-bg_glass_55_fbf9ee_1x400.png") 50% 50% repeat-x;
+  color: #363636;
+}
+
+/* line 1582, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
+  color: #363636;
+}
+
+/* line 1586, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {
+  border: 1px solid #cd0a0a;
+  background: #fef1ec url("images/ui-bg_glass_95_fef1ec_1x400.png") 50% 50% repeat-x;
+  color: #cd0a0a;
+}
+
+/* line 1592, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a, .ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text {
+  color: #cd0a0a;
+}
+
+/* line 1596, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary {
+  font-weight: bold;
+}
+
+/* line 1600, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
+  opacity: .7;
+  filter: Alpha(Opacity=70);
+  /* support: IE8 */
+  font-weight: normal;
+}
+
+/* line 1607, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+  opacity: .35;
+  filter: Alpha(Opacity=35);
+  /* support: IE8 */
+  background-image: none;
+}
+
+/* line 1614, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-disabled .ui-icon {
+  filter: Alpha(Opacity=35);
+  /* support: IE8 - See #6059 */
+}
+
+/* Icons
+----------------------------------*/
+/* states and images */
+/* line 1624, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon {
+  width: 16px;
+  height: 16px;
+  background-image: url("images/ui-icons_222222_256x240.png");
+}
+
+/* line 1630, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-widget-content .ui-icon, .ui-widget-header .ui-icon {
+  background-image: url("images/ui-icons_222222_256x240.png");
+}
+
+/* line 1634, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-default .ui-icon {
+  background-image: url("images/ui-icons_888888_256x240.png");
+}
+
+/* line 1638, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-state-active .ui-icon {
+  background-image: url("images/ui-icons_454545_256x240.png");
+}
+
+/* line 1642, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-highlight .ui-icon {
+  background-image: url("images/ui-icons_2e83ff_256x240.png");
+}
+
+/* line 1646, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {
+  background-image: url("images/ui-icons_cd0a0a_256x240.png");
+}
+
+/* positioning */
+/* line 1652, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-blank {
+  background-position: 16px 16px;
+}
+
+/* line 1656, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-carat-1-n {
+  background-position: 0 0;
+}
+
+/* line 1660, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-carat-1-ne {
+  background-position: -16px 0;
+}
+
+/* line 1664, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-carat-1-e {
+  background-position: -32px 0;
+}
+
+/* line 1668, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-carat-1-se {
+  background-position: -48px 0;
+}
+
+/* line 1672, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-carat-1-s {
+  background-position: -64px 0;
+}
+
+/* line 1676, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-carat-1-sw {
+  background-position: -80px 0;
+}
+
+/* line 1680, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-carat-1-w {
+  background-position: -96px 0;
+}
+
+/* line 1684, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-carat-1-nw {
+  background-position: -112px 0;
+}
+
+/* line 1688, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-carat-2-n-s {
+  background-position: -128px 0;
+}
+
+/* line 1692, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-carat-2-e-w {
+  background-position: -144px 0;
+}
+
+/* line 1696, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-triangle-1-n {
+  background-position: 0 -16px;
+}
+
+/* line 1700, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-triangle-1-ne {
+  background-position: -16px -16px;
+}
+
+/* line 1704, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-triangle-1-e {
+  background-position: -32px -16px;
+}
+
+/* line 1708, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-triangle-1-se {
+  background-position: -48px -16px;
+}
+
+/* line 1712, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-triangle-1-s {
+  background-position: -64px -16px;
+}
+
+/* line 1716, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-triangle-1-sw {
+  background-position: -80px -16px;
+}
+
+/* line 1720, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-triangle-1-w {
+  background-position: -96px -16px;
+}
+
+/* line 1724, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-triangle-1-nw {
+  background-position: -112px -16px;
+}
+
+/* line 1728, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-triangle-2-n-s {
+  background-position: -128px -16px;
+}
+
+/* line 1732, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-triangle-2-e-w {
+  background-position: -144px -16px;
+}
+
+/* line 1736, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrow-1-n {
+  background-position: 0 -32px;
+}
+
+/* line 1740, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrow-1-ne {
+  background-position: -16px -32px;
+}
+
+/* line 1744, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrow-1-e {
+  background-position: -32px -32px;
+}
+
+/* line 1748, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrow-1-se {
+  background-position: -48px -32px;
+}
+
+/* line 1752, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrow-1-s {
+  background-position: -64px -32px;
+}
+
+/* line 1756, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrow-1-sw {
+  background-position: -80px -32px;
+}
+
+/* line 1760, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrow-1-w {
+  background-position: -96px -32px;
+}
+
+/* line 1764, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrow-1-nw {
+  background-position: -112px -32px;
+}
+
+/* line 1768, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrow-2-n-s {
+  background-position: -128px -32px;
+}
+
+/* line 1772, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrow-2-ne-sw {
+  background-position: -144px -32px;
+}
+
+/* line 1776, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrow-2-e-w {
+  background-position: -160px -32px;
+}
+
+/* line 1780, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrow-2-se-nw {
+  background-position: -176px -32px;
+}
+
+/* line 1784, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowstop-1-n {
+  background-position: -192px -32px;
+}
+
+/* line 1788, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowstop-1-e {
+  background-position: -208px -32px;
+}
+
+/* line 1792, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowstop-1-s {
+  background-position: -224px -32px;
+}
+
+/* line 1796, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowstop-1-w {
+  background-position: -240px -32px;
+}
+
+/* line 1800, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowthick-1-n {
+  background-position: 0 -48px;
+}
+
+/* line 1804, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowthick-1-ne {
+  background-position: -16px -48px;
+}
+
+/* line 1808, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowthick-1-e {
+  background-position: -32px -48px;
+}
+
+/* line 1812, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowthick-1-se {
+  background-position: -48px -48px;
+}
+
+/* line 1816, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowthick-1-s {
+  background-position: -64px -48px;
+}
+
+/* line 1820, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowthick-1-sw {
+  background-position: -80px -48px;
+}
+
+/* line 1824, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowthick-1-w {
+  background-position: -96px -48px;
+}
+
+/* line 1828, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowthick-1-nw {
+  background-position: -112px -48px;
+}
+
+/* line 1832, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowthick-2-n-s {
+  background-position: -128px -48px;
+}
+
+/* line 1836, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowthick-2-ne-sw {
+  background-position: -144px -48px;
+}
+
+/* line 1840, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowthick-2-e-w {
+  background-position: -160px -48px;
+}
+
+/* line 1844, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowthick-2-se-nw {
+  background-position: -176px -48px;
+}
+
+/* line 1848, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowthickstop-1-n {
+  background-position: -192px -48px;
+}
+
+/* line 1852, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowthickstop-1-e {
+  background-position: -208px -48px;
+}
+
+/* line 1856, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowthickstop-1-s {
+  background-position: -224px -48px;
+}
+
+/* line 1860, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowthickstop-1-w {
+  background-position: -240px -48px;
+}
+
+/* line 1864, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowreturnthick-1-w {
+  background-position: 0 -64px;
+}
+
+/* line 1868, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowreturnthick-1-n {
+  background-position: -16px -64px;
+}
+
+/* line 1872, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowreturnthick-1-e {
+  background-position: -32px -64px;
+}
+
+/* line 1876, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowreturnthick-1-s {
+  background-position: -48px -64px;
+}
+
+/* line 1880, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowreturn-1-w {
+  background-position: -64px -64px;
+}
+
+/* line 1884, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowreturn-1-n {
+  background-position: -80px -64px;
+}
+
+/* line 1888, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowreturn-1-e {
+  background-position: -96px -64px;
+}
+
+/* line 1892, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowreturn-1-s {
+  background-position: -112px -64px;
+}
+
+/* line 1896, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowrefresh-1-w {
+  background-position: -128px -64px;
+}
+
+/* line 1900, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowrefresh-1-n {
+  background-position: -144px -64px;
+}
+
+/* line 1904, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowrefresh-1-e {
+  background-position: -160px -64px;
+}
+
+/* line 1908, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrowrefresh-1-s {
+  background-position: -176px -64px;
+}
+
+/* line 1912, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrow-4 {
+  background-position: 0 -80px;
+}
+
+/* line 1916, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-arrow-4-diag {
+  background-position: -16px -80px;
+}
+
+/* line 1920, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-extlink {
+  background-position: -32px -80px;
+}
+
+/* line 1924, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-newwin {
+  background-position: -48px -80px;
+}
+
+/* line 1928, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-refresh {
+  background-position: -64px -80px;
+}
+
+/* line 1932, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-shuffle {
+  background-position: -80px -80px;
+}
+
+/* line 1936, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-transfer-e-w {
+  background-position: -96px -80px;
+}
+
+/* line 1940, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-transferthick-e-w {
+  background-position: -112px -80px;
+}
+
+/* line 1944, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-folder-collapsed {
+  background-position: 0 -96px;
+}
+
+/* line 1948, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-folder-open {
+  background-position: -16px -96px;
+}
+
+/* line 1952, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-document {
+  background-position: -32px -96px;
+}
+
+/* line 1956, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-document-b {
+  background-position: -48px -96px;
+}
+
+/* line 1960, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-note {
+  background-position: -64px -96px;
+}
+
+/* line 1964, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-mail-closed {
+  background-position: -80px -96px;
+}
+
+/* line 1968, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-mail-open {
+  background-position: -96px -96px;
+}
+
+/* line 1972, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-suitcase {
+  background-position: -112px -96px;
+}
+
+/* line 1976, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-comment {
+  background-position: -128px -96px;
+}
+
+/* line 1980, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-person {
+  background-position: -144px -96px;
+}
+
+/* line 1984, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-print {
+  background-position: -160px -96px;
+}
+
+/* line 1988, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-trash {
+  background-position: -176px -96px;
+}
+
+/* line 1992, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-locked {
+  background-position: -192px -96px;
+}
+
+/* line 1996, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-unlocked {
+  background-position: -208px -96px;
+}
+
+/* line 2000, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-bookmark {
+  background-position: -224px -96px;
+}
+
+/* line 2004, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-tag {
+  background-position: -240px -96px;
+}
+
+/* line 2008, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-home {
+  background-position: 0 -112px;
+}
+
+/* line 2012, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-flag {
+  background-position: -16px -112px;
+}
+
+/* line 2016, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-calendar {
+  background-position: -32px -112px;
+}
+
+/* line 2020, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-cart {
+  background-position: -48px -112px;
+}
+
+/* line 2024, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-pencil {
+  background-position: -64px -112px;
+}
+
+/* line 2028, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-clock {
+  background-position: -80px -112px;
+}
+
+/* line 2032, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-disk {
+  background-position: -96px -112px;
+}
+
+/* line 2036, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-calculator {
+  background-position: -112px -112px;
+}
+
+/* line 2040, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-zoomin {
+  background-position: -128px -112px;
+}
+
+/* line 2044, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-zoomout {
+  background-position: -144px -112px;
+}
+
+/* line 2048, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-search {
+  background-position: -160px -112px;
+}
+
+/* line 2052, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-wrench {
+  background-position: -176px -112px;
+}
+
+/* line 2056, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-gear {
+  background-position: -192px -112px;
+}
+
+/* line 2060, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-heart {
+  background-position: -208px -112px;
+}
+
+/* line 2064, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-star {
+  background-position: -224px -112px;
+}
+
+/* line 2068, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-link {
+  background-position: -240px -112px;
+}
+
+/* line 2072, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-cancel {
+  background-position: 0 -128px;
+}
+
+/* line 2076, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-plus {
+  background-position: -16px -128px;
+}
+
+/* line 2080, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-plusthick {
+  background-position: -32px -128px;
+}
+
+/* line 2084, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-minus {
+  background-position: -48px -128px;
+}
+
+/* line 2088, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-minusthick {
+  background-position: -64px -128px;
+}
+
+/* line 2092, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-close {
+  background-position: -80px -128px;
+}
+
+/* line 2096, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-closethick {
+  background-position: -96px -128px;
+}
+
+/* line 2100, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-key {
+  background-position: -112px -128px;
+}
+
+/* line 2104, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-lightbulb {
+  background-position: -128px -128px;
+}
+
+/* line 2108, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-scissors {
+  background-position: -144px -128px;
+}
+
+/* line 2112, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-clipboard {
+  background-position: -160px -128px;
+}
+
+/* line 2116, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-copy {
+  background-position: -176px -128px;
+}
+
+/* line 2120, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-contact {
+  background-position: -192px -128px;
+}
+
+/* line 2124, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-image {
+  background-position: -208px -128px;
+}
+
+/* line 2128, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-video {
+  background-position: -224px -128px;
+}
+
+/* line 2132, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-script {
+  background-position: -240px -128px;
+}
+
+/* line 2136, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-alert {
+  background-position: 0 -144px;
+}
+
+/* line 2140, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-info {
+  background-position: -16px -144px;
+}
+
+/* line 2144, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-notice {
+  background-position: -32px -144px;
+}
+
+/* line 2148, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-help {
+  background-position: -48px -144px;
+}
+
+/* line 2152, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-check {
+  background-position: -64px -144px;
+}
+
+/* line 2156, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-bullet {
+  background-position: -80px -144px;
+}
+
+/* line 2160, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-radio-on {
+  background-position: -96px -144px;
+}
+
+/* line 2164, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-radio-off {
+  background-position: -112px -144px;
+}
+
+/* line 2168, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-pin-w {
+  background-position: -128px -144px;
+}
+
+/* line 2172, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-pin-s {
+  background-position: -144px -144px;
+}
+
+/* line 2176, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-play {
+  background-position: 0 -160px;
+}
+
+/* line 2180, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-pause {
+  background-position: -16px -160px;
+}
+
+/* line 2184, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-seek-next {
+  background-position: -32px -160px;
+}
+
+/* line 2188, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-seek-prev {
+  background-position: -48px -160px;
+}
+
+/* line 2192, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-seek-end {
+  background-position: -64px -160px;
+}
+
+/* line 2196, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-seek-start, .ui-icon-seek-first {
+  background-position: -80px -160px;
+}
+
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+/* line 2202, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-stop {
+  background-position: -96px -160px;
+}
+
+/* line 2206, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-eject {
+  background-position: -112px -160px;
+}
+
+/* line 2210, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-volume-off {
+  background-position: -128px -160px;
+}
+
+/* line 2214, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-volume-on {
+  background-position: -144px -160px;
+}
+
+/* line 2218, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-power {
+  background-position: 0 -176px;
+}
+
+/* line 2222, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-signal-diag {
+  background-position: -16px -176px;
+}
+
+/* line 2226, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-signal {
+  background-position: -32px -176px;
+}
+
+/* line 2230, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-battery-0 {
+  background-position: -48px -176px;
+}
+
+/* line 2234, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-battery-1 {
+  background-position: -64px -176px;
+}
+
+/* line 2238, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-battery-2 {
+  background-position: -80px -176px;
+}
+
+/* line 2242, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-battery-3 {
+  background-position: -96px -176px;
+}
+
+/* line 2246, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-circle-plus {
+  background-position: 0 -192px;
+}
+
+/* line 2250, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-circle-minus {
+  background-position: -16px -192px;
+}
+
+/* line 2254, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-circle-close {
+  background-position: -32px -192px;
+}
+
+/* line 2258, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-circle-triangle-e {
+  background-position: -48px -192px;
+}
+
+/* line 2262, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-circle-triangle-s {
+  background-position: -64px -192px;
+}
+
+/* line 2266, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-circle-triangle-w {
+  background-position: -80px -192px;
+}
+
+/* line 2270, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-circle-triangle-n {
+  background-position: -96px -192px;
+}
+
+/* line 2274, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-circle-arrow-e {
+  background-position: -112px -192px;
+}
+
+/* line 2278, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-circle-arrow-s {
+  background-position: -128px -192px;
+}
+
+/* line 2282, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-circle-arrow-w {
+  background-position: -144px -192px;
+}
+
+/* line 2286, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-circle-arrow-n {
+  background-position: -160px -192px;
+}
+
+/* line 2290, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-circle-zoomin {
+  background-position: -176px -192px;
+}
+
+/* line 2294, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-circle-zoomout {
+  background-position: -192px -192px;
+}
+
+/* line 2298, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-circle-check {
+  background-position: -208px -192px;
+}
+
+/* line 2302, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-circlesmall-plus {
+  background-position: 0 -208px;
+}
+
+/* line 2306, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-circlesmall-minus {
+  background-position: -16px -208px;
+}
+
+/* line 2310, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-circlesmall-close {
+  background-position: -32px -208px;
+}
+
+/* line 2314, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-squaresmall-plus {
+  background-position: -48px -208px;
+}
+
+/* line 2318, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-squaresmall-minus {
+  background-position: -64px -208px;
+}
+
+/* line 2322, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-squaresmall-close {
+  background-position: -80px -208px;
+}
+
+/* line 2326, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-grip-dotted-vertical {
+  background-position: 0 -224px;
+}
+
+/* line 2330, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-grip-dotted-horizontal {
+  background-position: -16px -224px;
+}
+
+/* line 2334, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-grip-solid-vertical {
+  background-position: -32px -224px;
+}
+
+/* line 2338, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-grip-solid-horizontal {
+  background-position: -48px -224px;
+}
+
+/* line 2342, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-gripsmall-diagonal-se {
+  background-position: -64px -224px;
+}
+
+/* line 2346, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-icon-grip-diagonal-se {
+  background-position: -80px -224px;
+}
+
+/* Misc visuals
+----------------------------------*/
+/* Corner radius */
+/* line 2355, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+  border-top-left-radius: 4px;
+}
+
+/* line 2359, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+  border-top-right-radius: 4px;
+}
+
+/* line 2363, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+  border-bottom-left-radius: 4px;
+}
+
+/* line 2367, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  border-bottom-right-radius: 4px;
+}
+
+/* Overlays */
+/* line 2373, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-widget-overlay {
+  background: #aaaaaa url("images/ui-bg_flat_0_aaaaaa_40x100.png") 50% 50% repeat-x;
+  opacity: .3;
+  filter: Alpha(Opacity=30);
+  /* support: IE8 */
+}
+
+/* line 2380, /home/amy/Dropbox/linux/RailsProjects/CultureAPT/app/assets/stylesheets/application.scss */
+.ui-widget-shadow {
+  margin: -8px 0 0 -8px;
+  padding: 8px;
+  background: #aaaaaa url("images/ui-bg_flat_0_aaaaaa_40x100.png") 50% 50% repeat-x;
+  opacity: .3;
+  filter: Alpha(Opacity=30);
+  /* support: IE8 */
+  border-radius: 8px;
+}
