@@ -12,8 +12,8 @@ task :sfarts => :environment  do
 			:price => -1, 
 			:neighborhood => -1, 
 			:searchString => "", 
-			:date1 =>"Fri Jul 10 2015 15:35:03 GMT-0700 (PDT)", 
-			:date2 =>"Fri Jul 10 2015 15:35:03 GMT-0700 (PDT)",
+			:date1 =>"Fri Jul 25 2015 15:35:03 GMT-0700 (PDT)", 
+			:date2 =>"Fri Jul 25 2015 15:35:03 GMT-0700 (PDT)",
 			:returnFormat =>"json"
 			},
 		# :debug_output => $stdout
@@ -38,7 +38,8 @@ task :sfarts => :environment  do
 		# get event record infor
 		eventNumber = body["DATA"][i][0]
 		eventName = body["DATA"][i][6]
-		startDate = body["DATA"][i][26]
+		startDate = Time.parse(body["DATA"][i][26])
+
 		dateString = body["DATA"][i][9]
 		timeString = body["DATA"][i][10]
 		eventDesc = body["DATA"][i][7]

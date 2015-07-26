@@ -55,11 +55,13 @@ class HomeController < ApplicationController
         lon = Venue.find_by_id(@events.find_by_id(i).venue_id).longitude
         eventName = @events.find_by_id(i).name
         venueName = Venue.find_by_id(@events.find_by_id(i).venue_id).name
-        eDate = @events.find_by_id(i).start_date
+        # eDate = @events.find_by_id(i).start_date
+        eDate = @events.find_by_id(i).time_string
         eTime = @events.find_by_id(i).start_time
         des = @events.find_by_id(i).description
-        link = @events.find_by_id(i).id
-        
+        # link = @events.find_by_id(i).id
+        link = @events.find_by_id(i).url
+
         arr.push(lat) #0
         arr.push(lon) #1
         arr.push(eventName) #2
