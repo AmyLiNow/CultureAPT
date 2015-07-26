@@ -48,6 +48,7 @@ class HomeController < ApplicationController
       @events = Event.where(:start_date => Date.today..Date.today.next_month.end_of_month).order('start_date ASC') 
     end
 
+      
      @eventVenuesArr = []
       @events.each do |i|
         arr = []
