@@ -28,16 +28,7 @@
 <div class="inner-wrapper">
 	<a id="search"></a> 
 	<section class="search" id="map-view">
-		<!--
 		<%= form_tag(root_path, :method => "get") do %>
-			<fieldset class="search-field">
-				<%= text_field_tag :search, params[:search], placeholder: "search" %>
-				<%= submit_tag "search events", :name => nil, :class => 'button' %>
-			</fieldset>
-		<% end %>
--->
- 		<div class="clear-fix"></div>
- 		<%= form_tag(root_path, :method => "get") do %>
 			<fieldset class="search-field">
 				<%= text_field_tag :startDateSearch, params[:startDateSearch], placeholder: "date", id: "datepicker", autocomplete:"off" , type:"text"%>
 			<!--	<%= text_field_tag :startDateSearch, params[:startDateSearch], placeholder: "date", id: "from", autocomplete:"off" %>
@@ -45,7 +36,16 @@
 				<%= submit_tag "search by date", :name => nil, :class => 'button', type:"submit" %> 
 			</fieldset>           
 		<% end %>
+		<%= form_tag(root_path, :method => "get") do %>
+			<fieldset class="search-field">
+				<%= text_field_tag :search, params[:search], placeholder: "category, event name" %>
+				<%= submit_tag "search events", :name => nil, :class => 'button' %>
+			</fieldset>
+		<% end %>
 
+ 		<div class="clear-fix"></div>
+ 		
+<!-- 
 		<%= form_tag(root_path, :method => "get") do %>
 			<fieldset class="filters">
 				<ul>
@@ -65,7 +65,7 @@
 				<div class="clear-fix"></div>
 			</fieldset>
 		<% end %>
-
+ -->
 		
 
 		<!--  <%= form_tag(root_path, :method => "get") do %>
